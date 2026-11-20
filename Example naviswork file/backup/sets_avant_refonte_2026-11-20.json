@@ -1,0 +1,5248 @@
+{
+  "format": "navis-mcp-sets/1",
+  "sets": [
+    {
+      "name": "ARC_Murs",
+      "path": "CLAUSH/01_ARC/ARC_Murs",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Murs",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Murs"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ARC_Murs-rideaux",
+      "path": "CLAUSH/01_ARC/ARC_Murs-rideaux",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Panneaux de mur-rideau",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Panneaux de murs-rideaux",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Meneaux de mur-rideau",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Meneaux de murs-rideaux",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Panneaux de mur-rideau"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Panneaux de murs-rideaux",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Meneaux de mur-rideau",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Meneaux de murs-rideaux",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ARC_Portes",
+      "path": "CLAUSH/01_ARC/ARC_Portes",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Portes",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Portes"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ARC_Fenetres",
+      "path": "CLAUSH/01_ARC/ARC_Fenetres",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Fen\u00EAtres",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Fen\u00EAtres"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ARC_Sols",
+      "path": "CLAUSH/01_ARC/ARC_Sols",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Sols",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Sols"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ARC_Plafonds",
+      "path": "CLAUSH/01_ARC/ARC_Plafonds",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Plafonds",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Plafonds"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ARC_Toits",
+      "path": "CLAUSH/01_ARC/ARC_Toits",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Toits",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Toits"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ARC_Escaliers",
+      "path": "CLAUSH/01_ARC/ARC_Escaliers",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Escaliers",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Vol\u00E9es",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Paliers",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Supports",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Escaliers"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Vol\u00E9es",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Paliers",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Supports",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ARC_Garde-corps",
+      "path": "CLAUSH/01_ARC/ARC_Garde-corps",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Garde-corps",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Mains courantes",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Lisses sup\u00E9rieures",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Garde-corps"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Mains courantes",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Lisses sup\u00E9rieures",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ARC_Rampes",
+      "path": "CLAUSH/01_ARC/ARC_Rampes",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Rampes",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Rampes d\u0027acc\u00E8s",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Rampes"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Rampes d\u0027acc\u00E8s",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ARC_Poteaux (1)",
+      "path": "CLAUSH/01_ARC/ARC_Poteaux (1)",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Poteaux",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Poteaux"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ARC_Poteaux",
+      "path": "CLAUSH/01_ARC/ARC_Poteaux",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Poteaux",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Poteaux"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ARC_Mobilier-Agencement",
+      "path": "CLAUSH/01_ARC/ARC_Mobilier-Agencement",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Mobilier",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Syst\u00E8mes de mobilier",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Meubles de rangement",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Equipement sp\u00E9cialis\u00E9",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "\u00C9quipement sp\u00E9cialis\u00E9",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Mobilier"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Syst\u00E8mes de mobilier",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Meubles de rangement",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Equipement sp\u00E9cialis\u00E9",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "\u00C9quipement sp\u00E9cialis\u00E9",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ARC_Modeles-generiques",
+      "path": "CLAUSH/01_ARC/ARC_Modeles-generiques",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Mod\u00E8les g\u00E9n\u00E9riques",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Mod\u00E8les g\u00E9n\u00E9riques"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "STR_Poteaux-porteurs",
+      "path": "CLAUSH/02_STR/STR_Poteaux-porteurs",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Poteaux porteurs",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Poteaux porteurs"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "STR_Poutres-Ossature (1)",
+      "path": "CLAUSH/02_STR/STR_Poutres-Ossature (1)",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Ossature",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Ossature"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "STR_Poutres-Ossature",
+      "path": "CLAUSH/02_STR/STR_Poutres-Ossature",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Ossature",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Ossature"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "STR_Fondations",
+      "path": "CLAUSH/02_STR/STR_Fondations",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Fondations",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Fondations"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "STR_Treillis",
+      "path": "CLAUSH/02_STR/STR_Treillis",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Treillis",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Treillis"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "STR_Assemblages",
+      "path": "CLAUSH/02_STR/STR_Assemblages",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Assemblages structurels",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raidisseurs",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Assemblages structurels"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raidisseurs",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "STR_Armatures",
+      "path": "CLAUSH/02_STR/STR_Armatures",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Armature",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Armatures",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Armature"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Armatures",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CVC_Gaines",
+      "path": "CLAUSH/03_CVC/CVC_Gaines",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Gaines",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Gaines flexibles",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Gaines"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Gaines flexibles",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "Jeu de recherche",
+      "path": "CLAUSH/03_CVC/Jeu de recherche",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Gaines flexibles",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Gaine"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Gaines flexibles",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "Jeu de recherche (1)",
+      "path": "CLAUSH/03_CVC/Jeu de recherche (1)",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Gaines flexibles",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Gaine"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Gaines flexibles",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CVC_Raccords-gaine",
+      "path": "CLAUSH/03_CVC/CVC_Raccords-gaine",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de gaines",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de gaine"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de gaines",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CVC_Accessoires-gaine",
+      "path": "CLAUSH/03_CVC/CVC_Accessoires-gaine",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoires de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoires de gaines",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoires de gaine"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoires de gaines",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CVC_Isolation-gaine",
+      "path": "CLAUSH/03_CVC/CVC_Isolation-gaine",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Isolations de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Isolation de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Rev\u00EAtements int\u00E9rieurs de gaine",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Isolations de gaine"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Isolation de gaine",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Rev\u00EAtements int\u00E9rieurs de gaine",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CVC_Bouches-aeration",
+      "path": "CLAUSH/03_CVC/CVC_Bouches-aeration",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Bouches d\u0027a\u00E9ration",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Bouche d\u0027a\u00E9ration",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Bouches d\u0027a\u00E9ration"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Bouche d\u0027a\u00E9ration",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CVC_Equipements",
+      "path": "CLAUSH/03_CVC/CVC_Equipements",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Equipement de g\u00E9nie climatique",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "\u00C9quipement de g\u00E9nie climatique",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Equipement m\u00E9canique",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "\u00C9quipement m\u00E9canique",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Equipement de g\u00E9nie climatique"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "\u00C9quipement de g\u00E9nie climatique",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Equipement m\u00E9canique",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "\u00C9quipement m\u00E9canique",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "PLB_Raccords-canalisation",
+      "path": "CLAUSH/04_PLB/PLB_Raccords-canalisation",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de canalisation",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de canalisations",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de canalisation"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de canalisations",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "PLB_Accessoires-canalisation",
+      "path": "CLAUSH/04_PLB/PLB_Accessoires-canalisation",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoires de canalisation",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoires de canalisations",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoires de canalisation"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoires de canalisations",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "Jeu de recherche",
+      "path": "CLAUSH/04_PLB/Jeu de recherche",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoire de canalisation",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoires de canalisations",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoire de canalisation"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoires de canalisations",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "PLB_Isolation-canalisation",
+      "path": "CLAUSH/04_PLB/PLB_Isolation-canalisation",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Isolations de canalisation",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Isolation de canalisation",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Isolations de canalisation"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Isolation de canalisation",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "PLB_Appareils-sanitaires",
+      "path": "CLAUSH/04_PLB/PLB_Appareils-sanitaires",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Appareils sanitaires",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Appareils sanitaires"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "PLB_Equipements",
+      "path": "CLAUSH/04_PLB/PLB_Equipements",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Equipement de plomberie",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "\u00C9quipement de plomberie",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Equipement de plomberie"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "\u00C9quipement de plomberie",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "PLB_Canalisations",
+      "path": "CLAUSH/04_PLB/PLB_Canalisations",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Canalisation",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Canalisation"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ELE_Chemins-de-cables",
+      "path": "CLAUSH/05_ELE/ELE_Chemins-de-cables",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Chemins de c\u00E2bles",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de chemins de c\u00E2bles",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de chemin de c\u00E2bles",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Chemins de c\u00E2bles"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de chemins de c\u00E2bles",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de chemin de c\u00E2bles",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ELE_Conduits",
+      "path": "CLAUSH/05_ELE/ELE_Conduits",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Conduits",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de conduits",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de conduit",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Conduits"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de conduits",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de conduit",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ELE_Equipements",
+      "path": "CLAUSH/05_ELE/ELE_Equipements",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Installations \u00E9lectriques",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Tableaux/Baies",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Equipement \u00E9lectrique",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "\u00C9quipement \u00E9lectrique",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Installations \u00E9lectriques"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Tableaux/Baies",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Equipement \u00E9lectrique",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "\u00C9quipement \u00E9lectrique",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ELE_Eclairage",
+      "path": "CLAUSH/05_ELE/ELE_Eclairage",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Luminaires",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Dispositifs d\u0027\u00E9clairage",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Luminaires"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Dispositifs d\u0027\u00E9clairage",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "ELE_Courants-faibles",
+      "path": "CLAUSH/05_ELE/ELE_Courants-faibles",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Appareils de communication",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Dispositifs de communication",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Dispositifs de donn\u00E9es",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Dispositifs de s\u00E9curit\u00E9",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Appareils t\u00E9l\u00E9phoniques",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Appareils d\u0027appel malade",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Appareil d\u0027appel malade",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Appareils audiovisuels",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Appareils de communication"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Dispositifs de communication",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Dispositifs de donn\u00E9es",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Dispositifs de s\u00E9curit\u00E9",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Appareils t\u00E9l\u00E9phoniques",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Appareils d\u0027appel malade",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Appareil d\u0027appel malade",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Appareils audiovisuels",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "SSI_Sprinklers",
+      "path": "CLAUSH/06_SSI/SSI_Sprinklers",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Sprinklers",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Sprinkleurs",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Sprinklers"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Sprinkleurs",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "SSI_Alarme-incendie",
+      "path": "CLAUSH/06_SSI/SSI_Alarme-incendie",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Dispositifs d\u0027alarme incendie",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Dispositifs d\u0027alarme incendie"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "SSI_Protection-incendie",
+      "path": "CLAUSH/06_SSI/SSI_Protection-incendie",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Protection contre les incendies",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Protection contre les incendies"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "SITE_Topographie",
+      "path": "CLAUSH/07_SITE/SITE_Topographie",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Topographie",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Toposolide",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Topographie"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Toposolide",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "SITE_Amenagements",
+      "path": "CLAUSH/07_SITE/SITE_Amenagements",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Site",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Plantes",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Environnement",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Parking",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Am\u00E9nagement",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Site"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Plantes",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Environnement",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Parking",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Am\u00E9nagement",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CLASH_ARC_Murs-Cloisons",
+      "path": "CLAUSH/10_GROUPES-CLASH/CLASH_ARC_Murs-Cloisons",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Murs",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Panneaux de mur-rideau",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Panneaux de murs-rideaux",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Meneaux de mur-rideau",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Meneaux de murs-rideaux",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Murs"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Panneaux de mur-rideau",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Panneaux de murs-rideaux",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Meneaux de mur-rideau",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Meneaux de murs-rideaux",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CLASH_ARC_Menuiseries",
+      "path": "CLAUSH/10_GROUPES-CLASH/CLASH_ARC_Menuiseries",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Portes",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Fen\u00EAtres",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Portes"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Fen\u00EAtres",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CLASH_ARC_Planchers-Toits",
+      "path": "CLAUSH/10_GROUPES-CLASH/CLASH_ARC_Planchers-Toits",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Sols",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Toits",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Sols"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Toits",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CLASH_ARC_Faux-plafonds",
+      "path": "CLAUSH/10_GROUPES-CLASH/CLASH_ARC_Faux-plafonds",
+      "kind": "search",
+      "query": {
+        "category": "Category",
+        "property": "Name",
+        "op": "equals",
+        "value": "Plafonds",
+        "matchCase": true
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Plafonds"
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CLASH_ARC_Circulations",
+      "path": "CLAUSH/10_GROUPES-CLASH/CLASH_ARC_Circulations",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Escaliers",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Vol\u00E9es",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Paliers",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Supports",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Garde-corps",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Mains courantes",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Lisses sup\u00E9rieures",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Rampes",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Rampes d\u0027acc\u00E8s",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Escaliers"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Vol\u00E9es",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Paliers",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Supports",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Garde-corps",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Mains courantes",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Lisses sup\u00E9rieures",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Rampes",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Rampes d\u0027acc\u00E8s",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CLASH_STR_Porteurs",
+      "path": "CLAUSH/10_GROUPES-CLASH/CLASH_STR_Porteurs",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Poteaux porteurs",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Ossature",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Fondations",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Treillis",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Poteaux porteurs"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Ossature",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Fondations",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Treillis",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CLASH_CVC_Reseaux",
+      "path": "CLAUSH/10_GROUPES-CLASH/CLASH_CVC_Reseaux",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Gaines",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Gaines flexibles",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de gaines",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoires de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoires de gaines",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Isolations de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Isolation de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Rev\u00EAtements int\u00E9rieurs de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Bouches d\u0027a\u00E9ration",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Bouche d\u0027a\u00E9ration",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Gaines"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Gaines flexibles",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de gaine",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de gaines",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoires de gaine",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoires de gaines",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Isolations de gaine",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Isolation de gaine",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Rev\u00EAtements int\u00E9rieurs de gaine",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Bouches d\u0027a\u00E9ration",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Bouche d\u0027a\u00E9ration",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CLASH_PLB_Reseaux",
+      "path": "CLAUSH/10_GROUPES-CLASH/CLASH_PLB_Reseaux",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Canalisations",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Canalisations souples",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de canalisation",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de canalisations",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoires de canalisation",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoires de canalisations",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Isolations de canalisation",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Isolation de canalisation",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Canalisations"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Canalisations souples",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de canalisation",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de canalisations",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoires de canalisation",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoires de canalisations",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Isolations de canalisation",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Isolation de canalisation",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CLASH_ELE_Chemins-Conduits",
+      "path": "CLAUSH/10_GROUPES-CLASH/CLASH_ELE_Chemins-Conduits",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Chemins de c\u00E2bles",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de chemins de c\u00E2bles",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de chemin de c\u00E2bles",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Conduits",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de conduits",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de conduit",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Chemins de c\u00E2bles"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de chemins de c\u00E2bles",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de chemin de c\u00E2bles",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Conduits",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de conduits",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de conduit",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CLASH_SSI_Reseaux",
+      "path": "CLAUSH/10_GROUPES-CLASH/CLASH_SSI_Reseaux",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Sprinklers",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Sprinkleurs",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Protection contre les incendies",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Sprinklers"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Sprinkleurs",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Protection contre les incendies",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CLASH_MEP_Equipements",
+      "path": "CLAUSH/10_GROUPES-CLASH/CLASH_MEP_Equipements",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Equipement de g\u00E9nie climatique",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "\u00C9quipement de g\u00E9nie climatique",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Equipement m\u00E9canique",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "\u00C9quipement m\u00E9canique",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Equipement de plomberie",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "\u00C9quipement de plomberie",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Installations \u00E9lectriques",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Tableaux/Baies",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Equipement \u00E9lectrique",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "\u00C9quipement \u00E9lectrique",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Equipement de g\u00E9nie climatique"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "\u00C9quipement de g\u00E9nie climatique",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Equipement m\u00E9canique",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "\u00C9quipement m\u00E9canique",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Equipement de plomberie",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "\u00C9quipement de plomberie",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Installations \u00E9lectriques",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Tableaux/Baies",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Equipement \u00E9lectrique",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "\u00C9quipement \u00E9lectrique",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CLASH_MEP_Tous-reseaux",
+      "path": "CLAUSH/10_GROUPES-CLASH/CLASH_MEP_Tous-reseaux",
+      "kind": "search",
+      "query": {
+        "or": [
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Gaines",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Gaines flexibles",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de gaines",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoires de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoires de gaines",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Isolations de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Isolation de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Rev\u00EAtements int\u00E9rieurs de gaine",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Bouches d\u0027a\u00E9ration",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Bouche d\u0027a\u00E9ration",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Canalisations",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Canalisations souples",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de canalisation",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de canalisations",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoires de canalisation",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Accessoires de canalisations",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Isolations de canalisation",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Isolation de canalisation",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Chemins de c\u00E2bles",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de chemins de c\u00E2bles",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de chemin de c\u00E2bles",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Conduits",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de conduits",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Raccords de conduit",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Sprinklers",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Sprinkleurs",
+            "matchCase": true
+          },
+          {
+            "category": "Category",
+            "property": "Name",
+            "op": "equals",
+            "value": "Protection contre les incendies",
+            "matchCase": true
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Gaines"
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Gaines flexibles",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de gaine",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de gaines",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoires de gaine",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoires de gaines",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Isolations de gaine",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Isolation de gaine",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Rev\u00EAtements int\u00E9rieurs de gaine",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Bouches d\u0027a\u00E9ration",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Bouche d\u0027a\u00E9ration",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Canalisations",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Canalisations souples",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de canalisation",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de canalisations",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoires de canalisation",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Accessoires de canalisations",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Isolations de canalisation",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Isolation de canalisation",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Chemins de c\u00E2bles",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de chemins de c\u00E2bles",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de chemin de c\u00E2bles",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Conduits",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de conduits",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Raccords de conduit",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Sprinklers",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Sprinkleurs",
+          "startsOrGroup": true
+        },
+        {
+          "comparison": "Equal",
+          "category": "Category",
+          "categoryInternal": "Category",
+          "property": "Name",
+          "propertyInternal": "Name",
+          "value": "Protection contre les incendies",
+          "startsOrGroup": true
+        }
+      ],
+      "pruneBelowMatch": false
+    },
+    {
+      "name": "CVC GENERAL",
+      "path": "MIX/CVC GENERAL",
+      "kind": "selection",
+      "items": [
+        "m1/1/10/0/0/0",
+        "m1/1/10/0/0/1",
+        "m1/1/10/0/0/2",
+        "m1/1/10/0/0/3",
+        "m1/1/10/0/0/4",
+        "m1/1/10/0/0/5",
+        "m1/1/10/0/0/6",
+        "m1/1/10/0/0/7",
+        "m1/1/10/0/0/8",
+        "m1/1/10/0/0/9",
+        "m1/1/10/0/0/10",
+        "m1/1/10/0/0/11",
+        "m1/1/10/0/0/12",
+        "m1/1/10/0/0/13",
+        "m1/1/10/0/0/14",
+        "m1/1/10/0/0/15",
+        "m1/1/10/0/0/16",
+        "m1/1/10/0/0/17",
+        "m1/2/8/0/0/0",
+        "m1/2/8/0/0/1",
+        "m1/2/8/0/0/2",
+        "m1/2/8/0/0/3",
+        "m1/2/8/0/0/4",
+        "m1/2/8/0/0/5",
+        "m1/2/8/0/0/6",
+        "m1/2/8/0/0/7",
+        "m1/2/8/0/0/8",
+        "m1/2/8/0/0/9",
+        "m1/2/8/0/0/10",
+        "m1/2/8/0/0/11",
+        "m1/2/8/0/0/12",
+        "m1/2/8/0/0/13",
+        "m1/2/8/0/0/14",
+        "m1/3/7/0/0/0",
+        "m1/3/7/0/0/1",
+        "m1/3/7/0/0/2",
+        "m1/3/7/1/0/0",
+        "m1/1/16/0/0/0",
+        "m1/1/16/0/0/1",
+        "m1/1/16/0/0/2",
+        "m1/1/16/0/0/3",
+        "m1/1/16/0/0/4",
+        "m1/1/16/0/0/5",
+        "m1/1/16/0/0/6",
+        "m1/1/16/0/0/7",
+        "m1/1/16/0/0/8",
+        "m1/1/16/0/0/9",
+        "m1/1/16/1/0/0",
+        "m1/1/16/1/0/1",
+        "m1/1/16/2/0/0",
+        "m1/1/16/2/0/1",
+        "m1/1/16/2/0/2",
+        "m1/2/14/0/0/0",
+        "m1/2/14/0/0/1",
+        "m1/2/14/1/0/0",
+        "m1/2/14/1/0/1",
+        "m1/2/14/1/0/2",
+        "m1/2/14/1/0/3",
+        "m1/2/14/1/0/4",
+        "m1/2/14/1/0/5",
+        "m1/2/14/1/0/6",
+        "m1/2/14/1/0/7",
+        "m1/2/14/1/0/8",
+        "m1/2/14/2/0/0",
+        "m1/2/14/2/0/1",
+        "m1/2/14/2/0/2",
+        "m1/2/14/2/0/3",
+        "m1/3/14/0/0/0",
+        "m1/3/14/1/0/0",
+        "m1/3/14/1/0/1",
+        "m1/3/0/0/0/0",
+        "m1/3/0/1/0/0",
+        "m1/3/0/2/0/0",
+        "m0/1/1/0/0/0",
+        "m0/1/1/0/1/0",
+        "m0/2/0/0/0/0",
+        "m0/2/0/0/0/1",
+        "m0/2/0/0/1/0",
+        "m0/3/1/0/0/0",
+        "m0/3/1/0/1/0",
+        "m0/3/1/0/1/1",
+        "m0/3/1/0/1/2",
+        "m0/9/0/0/0/0",
+        "m0/9/0/0/0/1",
+        "m0/9/0/0/0/2",
+        "m0/9/0/0/0/3",
+        "m1/1/9/0/0/0",
+        "m1/1/9/0/0/1",
+        "m1/1/9/0/0/2",
+        "m1/1/9/0/1/0",
+        "m1/1/9/0/1/1",
+        "m1/1/9/0/1/2",
+        "m1/1/9/0/2/0",
+        "m1/1/9/1/0/0",
+        "m1/1/9/2/0/0",
+        "m1/2/7/0/0/0",
+        "m1/2/7/1/0/0",
+        "m1/2/7/1/0/1",
+        "m1/2/7/1/0/2",
+        "m1/2/7/1/0/3",
+        "m1/2/7/1/0/4",
+        "m1/2/7/1/1/0",
+        "m1/2/7/1/1/1",
+        "m1/2/7/1/2/0",
+        "m1/2/7/1/2/1",
+        "m1/2/7/2/0/0",
+        "m1/3/6/0/0/0",
+        "m1/3/6/0/1/0",
+        "m1/3/6/1/0/0",
+        "m1/3/6/2/0/0",
+        "m1/3/6/3/0/0"
+      ]
+    },
+    {
+      "name": "ELEC GENERAL",
+      "path": "MIX/ELEC GENERAL",
+      "kind": "selection",
+      "items": [
+        "m1/1/4/0/0/0",
+        "m1/1/4/0/0/1",
+        "m1/1/4/0/0/2",
+        "m1/1/4/0/0/3",
+        "m1/1/4/0/0/4",
+        "m1/1/4/0/0/5",
+        "m1/1/4/0/0/6",
+        "m1/1/4/0/0/7",
+        "m1/1/4/0/0/8",
+        "m1/1/4/0/0/9",
+        "m1/1/4/0/0/10",
+        "m1/1/4/0/0/11",
+        "m1/1/4/0/0/12",
+        "m1/1/4/0/0/13",
+        "m1/1/4/0/0/14",
+        "m1/1/4/0/0/15",
+        "m1/1/4/0/0/16",
+        "m1/1/4/0/0/17",
+        "m1/1/4/0/0/18",
+        "m1/1/4/0/0/19",
+        "m1/1/15/0/0/0",
+        "m1/1/15/0/0/1",
+        "m1/1/15/0/0/2",
+        "m1/1/15/0/0/3",
+        "m1/1/15/0/0/4",
+        "m1/1/15/0/0/5",
+        "m1/1/15/0/0/6",
+        "m1/1/15/1/0/0",
+        "m1/1/15/1/0/1",
+        "m1/1/15/1/0/2",
+        "m1/1/15/2/0/0",
+        "m1/1/15/2/0/1",
+        "m1/1/15/3/0/0",
+        "m1/1/15/4/0/0",
+        "m1/2/4/0/0/0",
+        "m1/2/4/0/0/1",
+        "m1/2/4/0/0/2",
+        "m1/2/4/0/0/3",
+        "m1/2/4/0/0/4",
+        "m1/2/4/0/0/5",
+        "m1/2/4/0/0/6",
+        "m1/2/4/0/0/7",
+        "m1/2/4/0/0/8",
+        "m1/2/4/0/0/9",
+        "m1/2/4/0/0/10",
+        "m1/2/4/0/0/11",
+        "m1/2/4/0/0/12",
+        "m1/2/4/0/0/13",
+        "m1/2/4/0/0/14",
+        "m1/2/4/0/0/15",
+        "m1/2/4/0/0/16",
+        "m1/2/4/0/0/17",
+        "m1/2/4/0/0/18",
+        "m1/2/4/0/0/19",
+        "m1/2/13/0/0/0",
+        "m1/2/13/0/0/1",
+        "m1/2/13/0/0/2",
+        "m1/2/13/0/0/3",
+        "m1/2/13/0/0/4",
+        "m1/2/13/0/0/5",
+        "m1/2/13/1/0/0",
+        "m1/2/13/1/0/1",
+        "m1/2/13/1/0/2",
+        "m1/2/13/1/0/3",
+        "m1/2/13/1/0/4",
+        "m1/2/13/2/0/0",
+        "m1/2/13/3/0/0",
+        "m1/2/13/3/0/1",
+        "m1/2/13/3/0/2",
+        "m1/2/13/3/0/3",
+        "m1/3/2/0/0/0",
+        "m1/3/2/0/0/1",
+        "m1/3/2/0/0/2",
+        "m1/3/2/0/0/3",
+        "m1/3/2/0/0/4",
+        "m1/3/2/0/0/5",
+        "m1/3/2/0/0/6",
+        "m1/3/2/0/0/7",
+        "m1/3/2/0/0/8",
+        "m1/3/2/0/0/9",
+        "m1/3/2/0/0/10",
+        "m1/3/2/0/0/11",
+        "m1/3/2/0/0/12",
+        "m1/3/2/0/0/13",
+        "m1/3/13/0/0/0",
+        "m1/3/13/0/0/1",
+        "m1/3/13/0/0/2",
+        "m1/3/13/0/0/3",
+        "m1/3/13/0/0/4",
+        "m1/3/13/1/0/0",
+        "m1/3/13/1/0/1",
+        "m1/3/13/1/0/2",
+        "m1/3/13/2/0/0",
+        "m1/3/13/2/0/1",
+        "m1/4/3/0/0/0",
+        "m1/4/3/0/0/1",
+        "m1/4/3/0/0/2",
+        "m1/4/3/0/0/3",
+        "m1/4/3/0/0/4",
+        "m1/4/3/0/0/5",
+        "m1/4/3/0/0/6",
+        "m1/4/3/0/0/7",
+        "m1/4/3/0/0/8",
+        "m1/4/3/0/0/9",
+        "m1/4/3/0/0/10",
+        "m1/4/3/0/0/11",
+        "m1/4/12/0/0/0",
+        "m1/4/12/0/0/1",
+        "m1/4/12/0/0/2",
+        "m1/4/12/1/0/0",
+        "m1/4/12/1/0/1",
+        "m1/4/12/1/0/2",
+        "m1/4/12/1/0/3",
+        "m1/5/3/0/0/0",
+        "m1/5/3/0/0/1",
+        "m1/5/3/0/0/2",
+        "m1/5/3/0/0/3",
+        "m1/5/3/0/0/4",
+        "m1/5/3/0/0/5",
+        "m1/5/3/0/0/6",
+        "m1/5/3/0/0/7",
+        "m1/5/3/0/0/8",
+        "m1/5/3/0/0/9",
+        "m1/5/11/0/0/0",
+        "m1/5/11/0/0/1",
+        "m1/5/11/0/0/2",
+        "m1/5/11/0/0/3",
+        "m1/5/11/1/0/0",
+        "m1/5/11/1/0/1",
+        "m1/6/3/0/0/0",
+        "m1/6/3/0/0/1",
+        "m1/6/3/0/0/2",
+        "m1/6/3/0/0/3",
+        "m1/6/3/0/0/4",
+        "m1/6/3/0/0/5",
+        "m1/6/3/0/0/6",
+        "m1/6/3/0/0/7",
+        "m1/6/3/0/0/8",
+        "m1/6/3/0/0/9",
+        "m1/6/12/0/0/0",
+        "m1/6/12/0/0/1",
+        "m1/6/12/0/0/2",
+        "m1/6/12/0/0/3",
+        "m1/6/12/1/0/0",
+        "m1/6/12/1/0/1",
+        "m1/6/12/1/0/2",
+        "m1/6/12/1/0/3",
+        "m1/6/12/2/0/0",
+        "m1/6/12/2/0/1",
+        "m1/7/2/0/0/0",
+        "m1/7/2/0/0/1",
+        "m1/7/2/0/0/2",
+        "m1/7/2/0/0/3",
+        "m1/7/2/0/0/4",
+        "m1/7/2/0/0/5",
+        "m1/7/2/0/0/6",
+        "m1/7/2/0/0/7",
+        "m1/7/2/0/0/8",
+        "m1/7/2/0/0/9",
+        "m1/7/10/0/0/0",
+        "m1/7/10/0/0/1",
+        "m1/7/10/0/0/2",
+        "m1/7/10/0/0/3",
+        "m1/7/10/1/0/0",
+        "m1/7/10/1/0/1",
+        "m1/8/2/0/0/0",
+        "m1/8/2/0/0/1",
+        "m1/8/2/0/0/2",
+        "m1/8/2/0/0/3",
+        "m1/8/2/0/0/4",
+        "m1/8/2/0/0/5",
+        "m1/8/2/0/0/6",
+        "m1/8/2/0/0/7",
+        "m1/8/2/0/0/8",
+        "m1/8/2/0/0/9",
+        "m1/8/11/0/0/0",
+        "m1/8/11/0/0/1",
+        "m1/8/11/0/0/2",
+        "m1/8/11/0/0/3",
+        "m1/8/11/1/0/0",
+        "m1/8/11/1/0/1",
+        "m1/9/2/0/0/0",
+        "m1/9/2/0/0/1",
+        "m1/9/2/0/0/2",
+        "m1/9/2/0/0/3",
+        "m1/9/2/0/0/4",
+        "m1/9/2/0/0/5",
+        "m1/9/11/0/0/0",
+        "m1/9/11/0/0/1",
+        "m1/9/11/0/0/2",
+        "m1/9/11/0/0/3",
+        "m1/0/2/0/0/0",
+        "m1/0/2/0/0/1",
+        "m1/0/2/0/0/2",
+        "m1/0/2/0/0/3",
+        "m1/1/11/0/0/0",
+        "m1/1/11/0/0/1",
+        "m1/1/11/0/0/2",
+        "m1/1/11/1/0/0",
+        "m1/1/11/1/0/1",
+        "m1/1/11/1/0/2",
+        "m1/1/11/1/0/3",
+        "m1/1/11/1/0/4",
+        "m1/1/11/1/0/5",
+        "m1/1/11/1/0/6",
+        "m1/1/11/1/0/7",
+        "m1/1/11/1/0/8",
+        "m1/1/11/1/0/9",
+        "m1/1/11/1/0/10",
+        "m1/1/11/1/0/11",
+        "m1/1/11/1/0/12",
+        "m1/1/11/1/0/13",
+        "m1/1/11/1/0/14",
+        "m1/1/11/1/0/15",
+        "m1/2/9/0/0/0",
+        "m1/2/9/0/0/1",
+        "m1/2/9/0/0/2",
+        "m1/2/9/0/0/3",
+        "m1/3/8/0/0/0",
+        "m1/3/8/0/0/1",
+        "m1/3/8/0/0/2",
+        "m1/3/8/0/0/3",
+        "m1/3/8/0/0/4",
+        "m1/3/8/0/0/5",
+        "m1/3/8/0/0/6",
+        "m1/3/8/0/0/7",
+        "m1/3/8/0/0/8",
+        "m1/3/8/0/0/9",
+        "m1/3/8/0/0/10",
+        "m1/3/8/0/0/11",
+        "m1/3/8/0/0/12",
+        "m1/3/16/0/0/0",
+        "m1/3/16/1/0/0",
+        "m1/3/16/1/1/0",
+        "m1/3/16/1/1/1",
+        "m1/3/16/2/0/0",
+        "m1/3/16/2/1/0",
+        "m1/3/16/2/2/0",
+        "m1/3/16/2/3/0",
+        "m1/3/16/3/0/0",
+        "m1/4/8/0/0/0",
+        "m1/4/8/1/0/0",
+        "m1/4/8/1/0/1",
+        "m1/4/8/1/0/2",
+        "m1/4/8/1/0/3",
+        "m1/4/8/1/0/4",
+        "m1/4/8/1/0/5",
+        "m1/4/8/1/0/6",
+        "m1/4/8/1/0/7",
+        "m1/4/8/1/0/8",
+        "m1/4/13/0/0/0",
+        "m1/4/13/1/0/0",
+        "m1/4/13/1/0/1",
+        "m1/4/13/1/0/2",
+        "m1/4/13/1/0/3",
+        "m1/4/13/1/0/4",
+        "m1/5/7/0/0/0",
+        "m1/5/7/0/0/1",
+        "m1/5/7/0/0/2",
+        "m1/5/7/0/0/3",
+        "m1/5/7/0/0/4",
+        "m1/5/7/0/0/5",
+        "m1/5/7/0/0/6",
+        "m1/5/7/0/0/7",
+        "m1/5/7/0/0/8",
+        "m1/5/12/0/0/0",
+        "m1/5/12/0/0/1",
+        "m1/5/12/0/0/2",
+        "m1/5/12/0/0/3",
+        "m1/5/12/0/0/4",
+        "m1/6/8/0/0/0",
+        "m1/6/8/1/0/0",
+        "m1/6/8/1/0/1",
+        "m1/6/8/1/0/2",
+        "m1/6/8/1/0/3",
+        "m1/6/13/0/0/0",
+        "m1/7/6/0/0/0",
+        "m1/7/6/0/0/1",
+        "m1/7/6/0/0/2",
+        "m1/7/6/0/0/3",
+        "m1/8/7/0/0/0",
+        "m1/8/7/1/0/0",
+        "m1/8/7/1/0/1",
+        "m1/8/7/1/0/2",
+        "m1/8/7/1/0/3",
+        "m1/8/12/0/0/0",
+        "m1/9/7/0/0/0",
+        "m1/9/7/0/0/1",
+        "m1/9/7/1/0/0",
+        "m1/9/7/1/0/1",
+        "m1/9/7/1/0/2",
+        "m1/9/7/1/0/3",
+        "m1/9/7/1/0/4",
+        "m1/9/7/1/0/5",
+        "m1/9/12/0/0/0",
+        "m1/9/12/0/0/1",
+        "m1/9/12/0/0/2",
+        "m1/9/12/0/0/3",
+        "m1/9/12/0/1/0",
+        "m1/9/12/0/1/1",
+        "m1/1/6/0/0/0",
+        "m1/1/6/0/0/1",
+        "m1/1/6/0/0/2",
+        "m1/1/13/0/0/0",
+        "m1/1/13/0/0/1",
+        "m1/1/13/0/0/2",
+        "m1/1/13/0/0/3",
+        "m1/1/13/0/0/4",
+        "m1/1/13/0/0/5",
+        "m1/1/13/0/0/6",
+        "m1/1/13/0/0/7",
+        "m1/1/13/0/0/8",
+        "m1/1/13/0/0/9",
+        "m1/1/13/0/0/10",
+        "m1/1/13/0/0/11",
+        "m1/1/13/0/0/12",
+        "m1/1/13/0/0/13",
+        "m1/1/13/0/0/14",
+        "m1/1/13/0/0/15",
+        "m1/1/13/0/0/16",
+        "m1/1/13/0/0/17",
+        "m1/1/13/0/0/18",
+        "m1/1/13/0/0/19",
+        "m1/1/13/0/0/20",
+        "m1/1/13/0/0/21",
+        "m1/1/13/0/0/22",
+        "m1/1/13/0/0/23",
+        "m1/1/13/0/0/24",
+        "m1/1/13/0/0/25",
+        "m1/1/13/0/0/26",
+        "m1/1/13/0/0/27",
+        "m1/1/13/0/0/28",
+        "m1/1/13/0/0/29",
+        "m1/1/13/0/0/30",
+        "m1/1/13/0/0/31",
+        "m1/1/13/0/0/32",
+        "m1/1/13/0/0/33",
+        "m1/1/13/0/0/34",
+        "m1/1/13/0/0/35",
+        "m1/1/13/0/0/36",
+        "m1/1/13/0/0/37",
+        "m1/1/13/0/0/38",
+        "m1/1/13/0/0/39",
+        "m1/1/13/0/0/40",
+        "m1/1/13/0/0/41",
+        "m1/1/13/0/0/42",
+        "m1/1/13/0/0/43",
+        "m1/1/13/0/0/44",
+        "m1/1/13/0/0/45",
+        "m1/1/13/0/0/46",
+        "m1/1/13/0/0/47",
+        "m1/1/13/0/0/48",
+        "m1/1/13/0/0/49",
+        "m1/1/13/0/0/50",
+        "m1/1/13/0/0/51",
+        "m1/1/13/0/0/52",
+        "m1/1/13/0/0/53",
+        "m1/1/13/0/0/54",
+        "m1/1/13/0/0/55",
+        "m1/1/13/0/0/56",
+        "m1/1/13/0/0/57",
+        "m1/1/13/0/0/58",
+        "m1/1/13/0/0/59",
+        "m1/1/13/0/0/60",
+        "m1/1/13/0/0/61",
+        "m1/1/13/0/0/62",
+        "m1/1/13/0/0/63",
+        "m1/1/13/0/0/64",
+        "m1/1/13/0/0/65",
+        "m1/1/13/0/0/66",
+        "m1/1/13/0/0/67",
+        "m1/1/13/0/0/68",
+        "m1/1/13/0/0/69",
+        "m1/1/13/1/0/0",
+        "m1/1/13/1/0/1",
+        "m1/1/13/1/0/2",
+        "m1/1/13/1/0/3",
+        "m1/1/13/1/0/4",
+        "m1/1/13/1/0/5",
+        "m1/1/13/1/0/6",
+        "m1/1/13/1/0/7",
+        "m1/1/13/1/0/8",
+        "m1/1/13/1/0/9",
+        "m1/1/13/1/0/10",
+        "m1/1/13/1/0/11",
+        "m1/1/13/1/0/12",
+        "m1/1/13/1/0/13",
+        "m1/1/13/1/0/14",
+        "m1/1/13/1/0/15",
+        "m1/1/13/1/0/16",
+        "m1/1/13/2/0/0",
+        "m1/1/13/3/0/0",
+        "m1/1/13/3/0/1",
+        "m1/1/13/3/0/2",
+        "m1/1/13/3/0/3",
+        "m1/1/13/3/0/4",
+        "m1/1/13/3/0/5",
+        "m1/1/13/3/0/6",
+        "m1/1/13/3/0/7",
+        "m1/1/13/3/0/8",
+        "m1/1/13/4/0/0",
+        "m1/2/5/0/0/0",
+        "m1/2/5/0/0/1",
+        "m1/2/5/0/0/2",
+        "m1/2/11/0/0/0",
+        "m1/2/11/0/0/1",
+        "m1/2/11/0/0/2",
+        "m1/2/11/0/0/3",
+        "m1/2/11/0/0/4",
+        "m1/2/11/0/0/5",
+        "m1/2/11/0/0/6",
+        "m1/2/11/0/0/7",
+        "m1/2/11/0/0/8",
+        "m1/2/11/0/0/9",
+        "m1/2/11/0/0/10",
+        "m1/2/11/0/0/11",
+        "m1/2/11/0/0/12",
+        "m1/2/11/0/0/13",
+        "m1/2/11/0/0/14",
+        "m1/2/11/0/0/15",
+        "m1/2/11/0/0/16",
+        "m1/2/11/0/0/17",
+        "m1/2/11/0/0/18",
+        "m1/2/11/0/0/19",
+        "m1/2/11/0/0/20",
+        "m1/2/11/0/0/21",
+        "m1/2/11/0/0/22",
+        "m1/2/11/0/0/23",
+        "m1/2/11/0/0/24",
+        "m1/2/11/0/0/25",
+        "m1/2/11/0/0/26",
+        "m1/2/11/0/0/27",
+        "m1/2/11/0/0/28",
+        "m1/2/11/0/0/29",
+        "m1/2/11/0/0/30",
+        "m1/2/11/0/0/31",
+        "m1/2/11/0/0/32",
+        "m1/2/11/0/0/33",
+        "m1/2/11/0/0/34",
+        "m1/2/11/0/0/35",
+        "m1/2/11/0/0/36",
+        "m1/2/11/0/0/37",
+        "m1/2/11/0/0/38",
+        "m1/2/11/0/0/39",
+        "m1/2/11/0/0/40",
+        "m1/2/11/0/0/41",
+        "m1/2/11/0/0/42",
+        "m1/2/11/0/0/43",
+        "m1/2/11/0/0/44",
+        "m1/2/11/0/0/45",
+        "m1/2/11/0/0/46",
+        "m1/2/11/0/0/47",
+        "m1/2/11/0/0/48",
+        "m1/2/11/0/0/49",
+        "m1/2/11/0/0/50",
+        "m1/2/11/0/0/51",
+        "m1/2/11/0/0/52",
+        "m1/2/11/1/0/0",
+        "m1/2/11/1/0/1",
+        "m1/2/11/1/0/2",
+        "m1/2/11/1/0/3",
+        "m1/2/11/1/0/4",
+        "m1/2/11/1/0/5",
+        "m1/2/11/1/0/6",
+        "m1/2/11/1/0/7",
+        "m1/2/11/1/0/8",
+        "m1/2/11/1/0/9",
+        "m1/2/11/1/0/10",
+        "m1/2/11/1/0/11",
+        "m1/2/11/1/0/12",
+        "m1/2/11/2/0/0",
+        "m1/2/11/2/0/1",
+        "m1/2/11/2/0/2",
+        "m1/2/11/2/0/3",
+        "m1/2/11/2/0/4",
+        "m1/2/11/2/0/5",
+        "m1/2/11/2/0/6",
+        "m1/2/11/2/0/7",
+        "m1/2/11/2/0/8",
+        "m1/3/4/0/0/0",
+        "m1/3/4/0/0/1",
+        "m1/3/4/0/0/2",
+        "m1/3/4/0/0/3",
+        "m1/3/4/0/0/4",
+        "m1/3/4/1/0/0",
+        "m1/3/4/1/0/1",
+        "m1/3/10/0/0/0",
+        "m1/3/10/1/0/0",
+        "m1/3/10/2/0/0",
+        "m1/3/10/2/0/1",
+        "m1/3/10/2/0/2",
+        "m1/3/10/2/0/3",
+        "m1/3/10/2/0/4",
+        "m1/3/10/2/0/5",
+        "m1/3/10/2/0/6",
+        "m1/3/10/2/0/7",
+        "m1/3/10/2/0/8",
+        "m1/3/10/2/0/9",
+        "m1/3/10/2/0/10",
+        "m1/3/10/2/0/11",
+        "m1/3/10/2/0/12",
+        "m1/3/10/2/0/13",
+        "m1/3/10/2/0/14",
+        "m1/3/10/2/0/15",
+        "m1/3/10/2/0/16",
+        "m1/3/10/2/0/17",
+        "m1/3/10/2/0/18",
+        "m1/3/10/2/0/19",
+        "m1/3/10/2/0/20",
+        "m1/3/10/2/0/21",
+        "m1/3/10/2/0/22",
+        "m1/3/10/2/0/23",
+        "m1/3/10/2/0/24",
+        "m1/3/10/2/0/25",
+        "m1/3/10/2/0/26",
+        "m1/3/10/2/0/27",
+        "m1/3/10/2/0/28",
+        "m1/3/10/2/0/29",
+        "m1/3/10/2/0/30",
+        "m1/3/10/2/0/31",
+        "m1/3/10/2/0/32",
+        "m1/3/10/2/0/33",
+        "m1/3/10/2/0/34",
+        "m1/3/10/2/0/35",
+        "m1/3/10/2/0/36",
+        "m1/3/10/2/0/37",
+        "m1/3/10/2/0/38",
+        "m1/3/10/2/0/39",
+        "m1/3/10/2/0/40",
+        "m1/3/10/2/0/41",
+        "m1/3/10/2/0/42",
+        "m1/3/10/2/0/43",
+        "m1/3/10/2/0/44",
+        "m1/3/10/2/0/45",
+        "m1/3/10/3/0/0",
+        "m1/3/10/3/0/1",
+        "m1/3/10/3/0/2",
+        "m1/3/10/3/0/3",
+        "m1/3/10/3/0/4",
+        "m1/3/10/3/0/5",
+        "m1/3/10/3/0/6",
+        "m1/3/10/3/0/7",
+        "m1/3/10/3/0/8",
+        "m1/3/10/3/0/9",
+        "m1/3/10/3/0/10",
+        "m1/3/10/3/0/11",
+        "m1/3/10/4/0/0",
+        "m1/3/10/5/0/0",
+        "m1/4/5/0/0/0",
+        "m1/4/10/0/0/0",
+        "m1/4/10/0/0/1",
+        "m1/4/10/0/0/2",
+        "m1/4/10/0/0/3",
+        "m1/4/10/0/0/4",
+        "m1/4/10/0/0/5",
+        "m1/4/10/0/0/6",
+        "m1/4/10/0/0/7",
+        "m1/4/10/0/0/8",
+        "m1/4/10/0/0/9",
+        "m1/4/10/0/0/10",
+        "m1/4/10/0/0/11",
+        "m1/4/10/0/0/12",
+        "m1/4/10/0/0/13",
+        "m1/4/10/0/0/14",
+        "m1/4/10/0/0/15",
+        "m1/4/10/0/0/16",
+        "m1/4/10/0/0/17",
+        "m1/4/10/0/0/18",
+        "m1/4/10/0/0/19",
+        "m1/4/10/0/0/20",
+        "m1/4/10/0/0/21",
+        "m1/4/10/0/0/22",
+        "m1/4/10/0/0/23",
+        "m1/4/10/0/0/24",
+        "m1/4/10/0/0/25",
+        "m1/4/10/0/0/26",
+        "m1/4/10/0/0/27",
+        "m1/4/10/0/0/28",
+        "m1/4/10/0/0/29",
+        "m1/4/10/0/0/30",
+        "m1/4/10/0/0/31",
+        "m1/4/10/0/0/32",
+        "m1/4/10/0/0/33",
+        "m1/4/10/0/0/34",
+        "m1/4/10/0/0/35",
+        "m1/4/10/0/0/36",
+        "m1/4/10/0/0/37",
+        "m1/4/10/0/0/38",
+        "m1/4/10/0/0/39",
+        "m1/4/10/0/0/40",
+        "m1/4/10/0/0/41",
+        "m1/4/10/0/0/42",
+        "m1/4/10/0/0/43",
+        "m1/4/10/0/0/44",
+        "m1/4/10/0/0/45",
+        "m1/4/10/0/0/46",
+        "m1/4/10/0/0/47",
+        "m1/4/10/0/0/48",
+        "m1/4/10/1/0/0",
+        "m1/4/10/1/0/1",
+        "m1/4/10/1/0/2",
+        "m1/4/10/1/0/3",
+        "m1/4/10/1/0/4",
+        "m1/4/10/1/0/5",
+        "m1/4/10/1/0/6",
+        "m1/4/10/1/0/7",
+        "m1/4/10/1/0/8",
+        "m1/4/10/1/0/9",
+        "m1/4/10/1/0/10",
+        "m1/4/10/1/0/11",
+        "m1/4/10/2/0/0",
+        "m1/4/10/2/0/1",
+        "m1/4/10/2/0/2",
+        "m1/4/10/2/0/3",
+        "m1/4/10/2/0/4",
+        "m1/4/10/2/0/5",
+        "m1/4/10/2/0/6",
+        "m1/4/10/2/0/7",
+        "m1/4/10/2/0/8",
+        "m1/4/10/3/0/0",
+        "m1/5/9/0/0/0",
+        "m1/5/9/0/0/1",
+        "m1/5/9/0/0/2",
+        "m1/5/9/0/0/3",
+        "m1/5/9/0/0/4",
+        "m1/5/9/0/0/5",
+        "m1/5/9/0/0/6",
+        "m1/5/9/0/0/7",
+        "m1/5/9/0/0/8",
+        "m1/5/9/0/0/9",
+        "m1/5/9/0/0/10",
+        "m1/5/9/0/0/11",
+        "m1/5/9/0/0/12",
+        "m1/5/9/1/0/0",
+        "m1/5/9/1/0/1",
+        "m1/5/9/1/0/2",
+        "m1/5/9/1/0/3",
+        "m1/5/9/1/0/4",
+        "m1/5/9/1/0/5",
+        "m1/5/9/1/0/6",
+        "m1/5/9/1/0/7",
+        "m1/5/9/1/0/8",
+        "m1/5/9/1/0/9",
+        "m1/5/9/1/0/10",
+        "m1/5/9/1/0/11",
+        "m1/5/9/1/0/12",
+        "m1/5/9/1/0/13",
+        "m1/5/9/1/0/14",
+        "m1/5/9/1/0/15",
+        "m1/5/9/1/0/16",
+        "m1/5/9/1/0/17",
+        "m1/5/9/1/0/18",
+        "m1/5/9/1/0/19",
+        "m1/5/9/1/0/20",
+        "m1/5/9/1/0/21",
+        "m1/5/9/1/0/22",
+        "m1/5/9/1/0/23",
+        "m1/5/9/1/0/24",
+        "m1/5/9/1/0/25",
+        "m1/5/9/1/0/26",
+        "m1/5/9/1/0/27",
+        "m1/5/9/1/0/28",
+        "m1/5/9/1/0/29",
+        "m1/5/9/1/0/30",
+        "m1/5/9/1/0/31",
+        "m1/5/9/1/0/32",
+        "m1/5/9/1/0/33",
+        "m1/5/9/1/0/34",
+        "m1/5/9/1/0/35",
+        "m1/5/9/1/0/36",
+        "m1/5/9/1/0/37",
+        "m1/5/9/1/0/38",
+        "m1/5/9/1/0/39",
+        "m1/5/9/1/0/40",
+        "m1/5/9/1/0/41",
+        "m1/5/9/1/0/42",
+        "m1/5/9/1/0/43",
+        "m1/5/9/1/0/44",
+        "m1/5/9/1/0/45",
+        "m1/5/9/1/0/46",
+        "m1/5/9/1/0/47",
+        "m1/5/9/2/0/0",
+        "m1/5/9/2/0/1",
+        "m1/5/9/2/0/2",
+        "m1/5/9/2/0/3",
+        "m1/5/9/2/0/4",
+        "m1/5/9/2/0/5",
+        "m1/5/9/2/0/6",
+        "m1/5/9/2/0/7",
+        "m1/5/9/2/0/8",
+        "m1/5/9/3/0/0",
+        "m1/6/5/0/0/0",
+        "m1/6/10/0/0/0",
+        "m1/6/10/0/0/1",
+        "m1/6/10/0/0/2",
+        "m1/6/10/0/0/3",
+        "m1/6/10/0/0/4",
+        "m1/6/10/0/0/5",
+        "m1/6/10/0/0/6",
+        "m1/6/10/0/0/7",
+        "m1/6/10/0/0/8",
+        "m1/6/10/0/0/9",
+        "m1/6/10/0/0/10",
+        "m1/6/10/0/0/11",
+        "m1/6/10/0/0/12",
+        "m1/6/10/1/0/0",
+        "m1/6/10/1/0/1",
+        "m1/6/10/1/0/2",
+        "m1/6/10/1/0/3",
+        "m1/6/10/1/0/4",
+        "m1/6/10/1/0/5",
+        "m1/6/10/1/0/6",
+        "m1/6/10/1/0/7",
+        "m1/6/10/1/0/8",
+        "m1/6/10/1/0/9",
+        "m1/6/10/1/0/10",
+        "m1/6/10/1/0/11",
+        "m1/6/10/1/0/12",
+        "m1/6/10/1/0/13",
+        "m1/6/10/1/0/14",
+        "m1/6/10/1/0/15",
+        "m1/6/10/1/0/16",
+        "m1/6/10/1/0/17",
+        "m1/6/10/1/0/18",
+        "m1/6/10/1/0/19",
+        "m1/6/10/1/0/20",
+        "m1/6/10/1/0/21",
+        "m1/6/10/1/0/22",
+        "m1/6/10/1/0/23",
+        "m1/6/10/1/0/24",
+        "m1/6/10/1/0/25",
+        "m1/6/10/1/0/26",
+        "m1/6/10/1/0/27",
+        "m1/6/10/1/0/28",
+        "m1/6/10/1/0/29",
+        "m1/6/10/1/0/30",
+        "m1/6/10/1/0/31",
+        "m1/6/10/1/0/32",
+        "m1/6/10/1/0/33",
+        "m1/6/10/1/0/34",
+        "m1/6/10/1/0/35",
+        "m1/6/10/1/0/36",
+        "m1/6/10/1/0/37",
+        "m1/6/10/1/0/38",
+        "m1/6/10/1/0/39",
+        "m1/6/10/1/0/40",
+        "m1/6/10/1/0/41",
+        "m1/6/10/1/0/42",
+        "m1/6/10/1/0/43",
+        "m1/6/10/1/0/44",
+        "m1/6/10/1/0/45",
+        "m1/6/10/1/0/46",
+        "m1/6/10/2/0/0",
+        "m1/6/10/2/0/1",
+        "m1/6/10/2/0/2",
+        "m1/6/10/2/0/3",
+        "m1/6/10/2/0/4",
+        "m1/6/10/2/0/5",
+        "m1/6/10/2/0/6",
+        "m1/6/10/2/0/7",
+        "m1/6/10/2/0/8",
+        "m1/7/8/0/0/0",
+        "m1/7/8/0/0/1",
+        "m1/7/8/0/0/2",
+        "m1/7/8/0/0/3",
+        "m1/7/8/0/0/4",
+        "m1/7/8/0/0/5",
+        "m1/7/8/0/0/6",
+        "m1/7/8/0/0/7",
+        "m1/7/8/0/0/8",
+        "m1/7/8/0/0/9",
+        "m1/7/8/0/0/10",
+        "m1/7/8/0/0/11",
+        "m1/7/8/1/0/0",
+        "m1/7/8/1/0/1",
+        "m1/7/8/1/0/2",
+        "m1/7/8/1/0/3",
+        "m1/7/8/1/0/4",
+        "m1/7/8/1/0/5",
+        "m1/7/8/1/0/6",
+        "m1/7/8/1/0/7",
+        "m1/7/8/1/0/8",
+        "m1/7/8/1/0/9",
+        "m1/7/8/1/0/10",
+        "m1/7/8/1/0/11",
+        "m1/7/8/1/0/12",
+        "m1/7/8/1/0/13",
+        "m1/7/8/1/0/14",
+        "m1/7/8/1/0/15",
+        "m1/7/8/1/0/16",
+        "m1/7/8/1/0/17",
+        "m1/7/8/1/0/18",
+        "m1/7/8/1/0/19",
+        "m1/7/8/1/0/20",
+        "m1/7/8/1/0/21",
+        "m1/7/8/1/0/22",
+        "m1/7/8/1/0/23",
+        "m1/7/8/1/0/24",
+        "m1/7/8/1/0/25",
+        "m1/7/8/1/0/26",
+        "m1/7/8/1/0/27",
+        "m1/7/8/1/0/28",
+        "m1/7/8/1/0/29",
+        "m1/7/8/1/0/30",
+        "m1/7/8/1/0/31",
+        "m1/7/8/1/0/32",
+        "m1/7/8/1/0/33",
+        "m1/7/8/1/0/34",
+        "m1/7/8/1/0/35",
+        "m1/7/8/1/0/36",
+        "m1/7/8/1/0/37",
+        "m1/7/8/1/0/38",
+        "m1/7/8/1/0/39",
+        "m1/7/8/1/0/40",
+        "m1/7/8/1/0/41",
+        "m1/7/8/1/0/42",
+        "m1/7/8/1/0/43",
+        "m1/7/8/1/0/44",
+        "m1/7/8/1/0/45",
+        "m1/7/8/1/0/46",
+        "m1/7/8/1/0/47",
+        "m1/7/8/2/0/0",
+        "m1/7/8/2/0/1",
+        "m1/7/8/2/0/2",
+        "m1/7/8/2/0/3",
+        "m1/7/8/2/0/4",
+        "m1/7/8/2/0/5",
+        "m1/7/8/2/0/6",
+        "m1/7/8/2/0/7",
+        "m1/7/8/2/0/8",
+        "m1/7/8/3/0/0",
+        "m1/8/4/0/0/0",
+        "m1/8/9/0/0/0",
+        "m1/8/9/0/0/1",
+        "m1/8/9/0/0/2",
+        "m1/8/9/0/0/3",
+        "m1/8/9/0/0/4",
+        "m1/8/9/0/0/5",
+        "m1/8/9/0/0/6",
+        "m1/8/9/0/0/7",
+        "m1/8/9/0/0/8",
+        "m1/8/9/0/0/9",
+        "m1/8/9/0/0/10",
+        "m1/8/9/0/0/11",
+        "m1/8/9/0/0/12",
+        "m1/8/9/0/0/13",
+        "m1/8/9/1/0/0",
+        "m1/8/9/1/0/1",
+        "m1/8/9/1/0/2",
+        "m1/8/9/1/0/3",
+        "m1/8/9/1/0/4",
+        "m1/8/9/1/0/5",
+        "m1/8/9/1/0/6",
+        "m1/8/9/1/0/7",
+        "m1/8/9/1/0/8",
+        "m1/8/9/1/0/9",
+        "m1/8/9/1/0/10",
+        "m1/8/9/1/0/11",
+        "m1/8/9/1/0/12",
+        "m1/8/9/1/0/13",
+        "m1/8/9/1/0/14",
+        "m1/8/9/1/0/15",
+        "m1/8/9/1/0/16",
+        "m1/8/9/1/0/17",
+        "m1/8/9/1/0/18",
+        "m1/8/9/1/0/19",
+        "m1/8/9/1/0/20",
+        "m1/8/9/1/0/21",
+        "m1/8/9/1/0/22",
+        "m1/8/9/1/0/23",
+        "m1/8/9/1/0/24",
+        "m1/8/9/1/0/25",
+        "m1/8/9/1/0/26",
+        "m1/8/9/1/0/27",
+        "m1/8/9/1/0/28",
+        "m1/8/9/1/0/29",
+        "m1/8/9/1/0/30",
+        "m1/8/9/1/0/31",
+        "m1/8/9/1/0/32",
+        "m1/8/9/1/0/33",
+        "m1/8/9/1/0/34",
+        "m1/8/9/1/0/35",
+        "m1/8/9/1/0/36",
+        "m1/8/9/1/0/37",
+        "m1/8/9/1/0/38",
+        "m1/8/9/1/0/39",
+        "m1/8/9/1/0/40",
+        "m1/8/9/1/0/41",
+        "m1/8/9/1/0/42",
+        "m1/8/9/1/0/43",
+        "m1/8/9/1/0/44",
+        "m1/8/9/1/0/45",
+        "m1/8/9/1/0/46",
+        "m1/8/9/1/0/47",
+        "m1/8/9/1/0/48",
+        "m1/8/9/2/0/0",
+        "m1/8/9/2/0/1",
+        "m1/8/9/2/0/2",
+        "m1/8/9/2/0/3",
+        "m1/8/9/2/0/4",
+        "m1/8/9/2/0/5",
+        "m1/8/9/2/0/6",
+        "m1/8/9/2/0/7",
+        "m1/8/9/2/0/8",
+        "m1/8/9/3/0/0",
+        "m1/9/4/0/0/0",
+        "m1/9/9/0/0/0",
+        "m1/9/9/0/0/1",
+        "m1/9/9/0/0/2",
+        "m1/9/9/0/0/3",
+        "m1/9/9/0/0/4",
+        "m1/9/9/0/0/5",
+        "m1/9/9/0/0/6",
+        "m1/9/9/0/0/7",
+        "m1/9/9/0/0/8",
+        "m1/9/9/0/0/9",
+        "m1/9/9/1/0/0",
+        "m1/9/9/1/0/1",
+        "m1/9/9/1/0/2",
+        "m1/9/9/1/0/3",
+        "m1/9/9/1/0/4",
+        "m1/9/9/1/0/5",
+        "m1/9/9/1/0/6",
+        "m1/9/9/1/0/7",
+        "m1/9/9/1/0/8",
+        "m1/9/9/1/0/9",
+        "m1/9/9/1/0/10",
+        "m1/9/9/1/0/11",
+        "m1/9/9/1/0/12",
+        "m1/9/9/1/0/13",
+        "m1/9/9/1/0/14",
+        "m1/9/9/1/0/15",
+        "m1/9/9/1/0/16",
+        "m1/9/9/1/0/17",
+        "m1/9/9/1/0/18",
+        "m1/9/9/1/0/19",
+        "m1/9/9/1/0/20",
+        "m1/9/9/1/0/21",
+        "m1/9/9/1/0/22",
+        "m1/9/9/1/0/23",
+        "m1/9/9/1/0/24",
+        "m1/9/9/1/0/25",
+        "m1/9/9/2/0/0",
+        "m1/9/9/2/0/1",
+        "m1/9/9/2/0/2",
+        "m1/9/9/2/0/3",
+        "m1/9/9/2/0/4",
+        "m1/9/9/2/0/5",
+        "m1/9/9/2/0/6",
+        "m1/9/9/2/0/7",
+        "m1/9/9/2/0/8",
+        "m1/9/9/2/0/9",
+        "m1/9/9/3/0/0",
+        "m1/9/9/4/0/0",
+        "m1/9/9/4/0/1",
+        "m1/9/9/4/0/2",
+        "m1/9/9/4/0/3",
+        "m1/9/9/4/0/4",
+        "m1/1/7/0/0/0",
+        "m1/1/8/0/0/0",
+        "m1/1/8/0/0/1",
+        "m1/1/8/0/0/2",
+        "m1/1/8/1/0/0",
+        "m1/1/8/1/0/1",
+        "m1/1/8/1/0/2",
+        "m1/1/8/1/0/3",
+        "m1/1/8/1/0/4",
+        "m1/2/6/0/0/0",
+        "m1/2/6/0/0/1",
+        "m1/2/6/1/0/0",
+        "m1/2/6/1/0/1",
+        "m1/2/6/1/0/2",
+        "m1/2/6/1/0/3",
+        "m1/3/5/0/0/0",
+        "m1/4/6/0/0/0",
+        "m1/4/7/0/0/0",
+        "m1/4/7/0/0/1",
+        "m1/4/7/1/0/0",
+        "m1/4/7/1/0/1",
+        "m1/4/7/1/0/2",
+        "m1/4/7/1/0/3",
+        "m1/5/5/0/0/0",
+        "m1/5/6/0/0/0",
+        "m1/5/6/0/0/1",
+        "m1/5/6/1/0/0",
+        "m1/5/6/1/0/1",
+        "m1/5/6/1/0/2",
+        "m1/5/6/1/0/3",
+        "m1/6/6/0/0/0",
+        "m1/6/7/0/0/0",
+        "m1/6/7/0/0/1",
+        "m1/6/7/1/0/0",
+        "m1/6/7/1/0/1",
+        "m1/6/7/1/0/2",
+        "m1/6/7/1/0/3",
+        "m1/7/4/0/0/0",
+        "m1/7/5/0/0/0",
+        "m1/7/5/0/0/1",
+        "m1/7/5/1/0/0",
+        "m1/7/5/1/0/1",
+        "m1/7/5/1/0/2",
+        "m1/7/5/1/0/3",
+        "m1/8/5/0/0/0",
+        "m1/8/6/0/0/0",
+        "m1/8/6/0/0/1",
+        "m1/8/6/1/0/0",
+        "m1/8/6/1/0/1",
+        "m1/8/6/1/0/2",
+        "m1/8/6/1/0/3",
+        "m1/9/5/0/0/0",
+        "m1/9/6/0/0/0",
+        "m1/9/6/0/0/1",
+        "m1/9/6/1/0/0",
+        "m1/9/6/1/0/1",
+        "m1/9/6/1/0/2",
+        "m1/9/6/1/0/3"
+      ]
+    },
+    {
+      "name": "PLB GENERAL",
+      "path": "MIX/PLB GENERAL",
+      "kind": "selection",
+      "items": [
+        "m1/1/14/0/0/0",
+        "m1/1/14/0/0/1",
+        "m1/1/14/0/0/2",
+        "m1/1/14/0/0/3",
+        "m1/1/14/0/0/4",
+        "m1/1/14/1/0/0",
+        "m1/1/14/1/0/1",
+        "m1/1/14/1/0/2",
+        "m1/1/14/1/0/3",
+        "m1/1/14/1/0/4",
+        "m1/1/14/1/0/5",
+        "m1/1/14/1/0/6",
+        "m1/1/14/1/0/7",
+        "m1/1/14/1/0/8",
+        "m1/1/14/1/0/9",
+        "m1/1/14/1/0/10",
+        "m1/1/14/1/0/11",
+        "m1/1/14/1/0/12",
+        "m1/1/14/1/0/13",
+        "m1/1/14/1/0/14",
+        "m1/1/14/1/0/15",
+        "m1/1/14/1/0/16",
+        "m1/1/14/1/0/17",
+        "m1/1/14/1/0/18",
+        "m1/1/14/1/0/19",
+        "m1/1/14/1/0/20",
+        "m1/1/14/1/0/21",
+        "m1/1/14/1/0/22",
+        "m1/1/14/1/0/23",
+        "m1/1/14/1/0/24",
+        "m1/1/14/1/0/25",
+        "m1/1/14/1/0/26",
+        "m1/1/14/2/0/0",
+        "m1/1/14/2/0/1",
+        "m1/1/14/2/0/2",
+        "m1/1/14/2/0/3",
+        "m1/1/14/2/0/4",
+        "m1/1/14/2/0/5",
+        "m1/1/14/2/0/6",
+        "m1/1/14/2/0/7",
+        "m1/1/14/2/0/8",
+        "m1/1/14/2/0/9",
+        "m1/2/12/0/0/0",
+        "m1/2/12/0/0/1",
+        "m1/2/12/0/0/2",
+        "m1/2/12/0/0/3",
+        "m1/2/12/0/0/4",
+        "m1/2/12/0/0/5",
+        "m1/2/12/0/0/6",
+        "m1/2/12/0/0/7",
+        "m1/2/12/0/0/8",
+        "m1/2/12/0/0/9",
+        "m1/2/12/0/0/10",
+        "m1/2/12/0/0/11",
+        "m1/2/12/0/0/12",
+        "m1/2/12/0/0/13",
+        "m1/2/12/0/0/14",
+        "m1/2/12/0/0/15",
+        "m1/2/12/0/0/16",
+        "m1/2/12/0/0/17",
+        "m1/2/12/0/0/18",
+        "m1/2/12/0/0/19",
+        "m1/2/12/0/0/20",
+        "m1/2/12/0/0/21",
+        "m1/2/12/1/0/0",
+        "m1/2/12/1/0/1",
+        "m1/2/12/1/0/2",
+        "m1/2/12/1/0/3",
+        "m1/2/12/1/0/4",
+        "m1/2/12/1/0/5",
+        "m1/2/12/1/0/6",
+        "m1/2/12/1/0/7",
+        "m1/2/12/2/0/0",
+        "m1/2/12/2/0/1",
+        "m1/2/12/2/0/2",
+        "m1/2/12/3/0/0",
+        "m1/2/12/3/0/1",
+        "m1/2/12/3/0/2",
+        "m1/2/12/3/0/3",
+        "m1/2/12/3/0/4",
+        "m1/2/12/3/0/5",
+        "m1/2/12/3/0/6",
+        "m1/2/12/3/0/7",
+        "m1/2/12/3/0/8",
+        "m1/3/12/0/0/0",
+        "m1/3/12/0/0/1",
+        "m1/3/12/0/0/2",
+        "m1/3/12/0/0/3",
+        "m1/3/12/0/0/4",
+        "m1/3/12/1/0/0",
+        "m1/3/12/1/0/1",
+        "m1/3/12/2/0/0",
+        "m1/3/12/2/0/1",
+        "m1/3/12/2/0/2",
+        "m1/3/12/2/0/3",
+        "m1/3/12/2/0/4",
+        "m1/3/12/2/0/5",
+        "m1/3/12/2/0/6",
+        "m1/3/12/3/0/0",
+        "m1/4/11/0/0/0",
+        "m1/4/11/0/0/1",
+        "m1/4/11/0/0/2",
+        "m1/4/11/0/0/3",
+        "m1/4/11/0/0/4",
+        "m1/4/11/0/0/5",
+        "m1/4/11/1/0/0",
+        "m1/4/11/1/0/1",
+        "m1/4/11/1/0/2",
+        "m1/4/11/1/0/3",
+        "m1/4/11/2/0/0",
+        "m1/4/11/2/0/1",
+        "m1/4/11/2/0/2",
+        "m1/4/11/2/0/3",
+        "m1/4/11/2/0/4",
+        "m1/4/11/2/0/5",
+        "m1/4/11/3/0/0",
+        "m1/4/11/3/0/1",
+        "m1/5/10/0/0/0",
+        "m1/5/10/0/0/1",
+        "m1/5/10/0/0/2",
+        "m1/5/10/0/0/3",
+        "m1/5/10/0/0/4",
+        "m1/5/10/0/0/5",
+        "m1/5/10/1/0/0",
+        "m1/5/10/1/0/1",
+        "m1/5/10/1/0/2",
+        "m1/5/10/1/0/3",
+        "m1/5/10/1/0/4",
+        "m1/5/10/1/0/5",
+        "m1/5/10/1/0/6",
+        "m1/5/10/2/0/0",
+        "m1/5/10/2/0/1",
+        "m1/5/10/2/0/2",
+        "m1/5/10/2/0/3",
+        "m1/5/10/2/0/4",
+        "m1/5/10/2/0/5",
+        "m1/5/10/3/0/0",
+        "m1/5/10/4/0/0",
+        "m1/5/10/4/0/1",
+        "m1/5/10/4/0/2",
+        "m1/6/11/0/0/0",
+        "m1/6/11/0/0/1",
+        "m1/6/11/0/0/2",
+        "m1/6/11/0/0/3",
+        "m1/6/11/0/0/4",
+        "m1/6/11/0/0/5",
+        "m1/6/11/0/0/6",
+        "m1/6/11/0/0/7",
+        "m1/6/11/1/0/0",
+        "m1/6/11/1/0/1",
+        "m1/6/11/1/0/2",
+        "m1/6/11/1/0/3",
+        "m1/6/11/1/0/4",
+        "m1/6/11/1/0/5",
+        "m1/6/11/1/0/6",
+        "m1/6/11/2/0/0",
+        "m1/6/11/2/0/1",
+        "m1/6/11/2/0/2",
+        "m1/6/11/2/0/3",
+        "m1/6/11/3/0/0",
+        "m1/6/11/4/0/0",
+        "m1/6/11/4/0/1",
+        "m1/6/11/4/0/2",
+        "m1/7/9/0/0/0",
+        "m1/7/9/0/0/1",
+        "m1/7/9/0/0/2",
+        "m1/7/9/0/0/3",
+        "m1/7/9/0/0/4",
+        "m1/7/9/0/0/5",
+        "m1/7/9/0/0/6",
+        "m1/7/9/0/0/7",
+        "m1/7/9/1/0/0",
+        "m1/7/9/1/0/1",
+        "m1/7/9/1/0/2",
+        "m1/7/9/1/0/3",
+        "m1/7/9/1/0/4",
+        "m1/7/9/1/0/5",
+        "m1/7/9/2/0/0",
+        "m1/7/9/2/0/1",
+        "m1/7/9/2/0/2",
+        "m1/7/9/2/0/3",
+        "m1/7/9/3/0/0",
+        "m1/7/9/4/0/0",
+        "m1/7/9/4/0/1",
+        "m1/7/9/4/0/2",
+        "m1/8/10/0/0/0",
+        "m1/8/10/0/0/1",
+        "m1/8/10/0/0/2",
+        "m1/8/10/0/0/3",
+        "m1/8/10/0/0/4",
+        "m1/8/10/0/0/5",
+        "m1/8/10/0/0/6",
+        "m1/8/10/0/0/7",
+        "m1/8/10/1/0/0",
+        "m1/8/10/1/0/1",
+        "m1/8/10/1/0/2",
+        "m1/8/10/1/0/3",
+        "m1/8/10/1/0/4",
+        "m1/8/10/1/0/5",
+        "m1/8/10/2/0/0",
+        "m1/8/10/2/0/1",
+        "m1/8/10/2/0/2",
+        "m1/8/10/2/0/3",
+        "m1/8/10/3/0/0",
+        "m1/8/10/3/0/1",
+        "m1/9/10/0/0/0",
+        "m1/9/10/1/0/0",
+        "m1/9/10/2/0/0",
+        "m1/9/10/2/0/1",
+        "m1/9/10/2/0/2",
+        "m1/0/0/0/0/0",
+        "m1/0/0/0/0/1",
+        "m1/0/0/0/0/2",
+        "m1/0/0/0/0/3",
+        "m1/0/0/0/0/4",
+        "m1/0/0/0/0/5",
+        "m1/0/0/0/0/6",
+        "m1/0/0/0/0/7",
+        "m1/0/0/0/0/8",
+        "m1/0/0/0/0/9",
+        "m1/0/0/0/0/10",
+        "m1/0/0/0/0/11",
+        "m1/0/0/0/0/12",
+        "m1/0/0/0/0/13",
+        "m1/0/0/0/0/14",
+        "m1/0/0/0/0/15",
+        "m1/0/0/0/0/16",
+        "m1/0/0/0/0/17",
+        "m1/0/0/0/0/18",
+        "m1/0/0/0/0/19",
+        "m1/0/0/0/0/20",
+        "m1/0/0/0/0/21",
+        "m1/0/0/0/0/22",
+        "m1/0/0/0/0/23",
+        "m1/0/0/0/0/24",
+        "m1/0/0/0/0/25",
+        "m1/0/0/0/0/26",
+        "m1/0/0/0/0/27",
+        "m1/0/0/0/0/28",
+        "m1/0/0/0/0/29",
+        "m1/0/0/0/0/30",
+        "m1/0/0/0/0/31",
+        "m1/0/0/0/0/32",
+        "m1/0/0/0/1/0",
+        "m1/0/0/0/1/1",
+        "m1/0/0/0/1/2",
+        "m1/0/0/0/1/3",
+        "m1/0/0/0/1/4",
+        "m1/1/0/0/0/0",
+        "m1/1/0/0/0/1",
+        "m1/1/0/0/0/2",
+        "m1/1/0/0/0/3",
+        "m1/1/0/0/0/4",
+        "m1/1/0/0/0/5",
+        "m1/1/0/0/0/6",
+        "m1/1/0/0/0/7",
+        "m1/1/0/0/0/8",
+        "m1/1/0/0/0/9",
+        "m1/1/0/0/0/10",
+        "m1/1/0/0/0/11",
+        "m1/1/0/1/0/0",
+        "m1/1/0/2/0/0",
+        "m1/1/0/3/0/0",
+        "m1/1/0/4/0/0",
+        "m1/2/0/0/0/0",
+        "m1/2/0/1/0/0",
+        "m1/4/0/0/0/0",
+        "m1/4/0/0/0/1",
+        "m1/4/0/1/0/0",
+        "m1/4/0/1/0/1",
+        "m1/4/0/2/0/0",
+        "m1/4/0/2/0/1",
+        "m1/4/0/2/0/2",
+        "m1/4/0/2/0/3",
+        "m1/4/0/2/0/4",
+        "m1/5/0/0/0/0",
+        "m1/5/0/0/0/1",
+        "m1/5/0/1/0/0",
+        "m1/5/0/1/0/1",
+        "m1/5/0/2/0/0",
+        "m1/5/0/2/0/1",
+        "m1/5/0/2/0/2",
+        "m1/5/0/2/0/3",
+        "m1/5/0/2/0/4",
+        "m1/6/0/0/0/0",
+        "m1/6/0/0/0/1",
+        "m1/6/0/1/0/0",
+        "m1/6/0/1/0/1",
+        "m1/7/0/0/0/0",
+        "m1/7/0/0/0/1",
+        "m1/7/0/1/0/0",
+        "m1/7/0/1/0/1",
+        "m1/8/0/0/0/0",
+        "m1/8/0/0/0/1",
+        "m1/8/0/1/0/0",
+        "m1/8/0/1/0/1",
+        "m1/9/0/0/0/0",
+        "m1/9/0/1/0/0",
+        "m0/1/0/0/0/0",
+        "m0/3/0/0/0/0",
+        "m1/1/2/0/0/0",
+        "m1/1/2/0/0/1",
+        "m1/1/2/0/0/2",
+        "m1/2/2/0/0/0",
+        "m1/2/2/0/0/1",
+        "m1/4/1/0/0/0",
+        "m1/5/1/0/0/0",
+        "m1/6/1/0/0/0",
+        "m1/1/3/0/0/0",
+        "m1/1/3/0/0/1",
+        "m1/1/3/0/0/2",
+        "m1/1/3/0/0/3",
+        "m1/1/3/0/0/4",
+        "m1/1/3/0/0/5",
+        "m1/1/3/0/0/6",
+        "m1/1/3/0/0/7",
+        "m1/1/3/0/0/8",
+        "m1/1/3/0/0/9",
+        "m1/1/3/0/0/10",
+        "m1/1/3/0/1/0",
+        "m1/1/3/0/1/1",
+        "m1/1/3/0/1/2",
+        "m1/1/3/0/1/3",
+        "m1/1/3/0/1/4",
+        "m1/1/3/0/1/5",
+        "m1/1/3/0/1/6",
+        "m1/1/3/0/1/7",
+        "m1/1/3/0/1/8",
+        "m1/1/3/0/1/9",
+        "m1/1/3/0/1/10",
+        "m1/1/3/0/1/11",
+        "m1/1/3/0/1/12",
+        "m1/1/3/0/1/13",
+        "m1/1/3/0/1/14",
+        "m1/1/3/0/1/15",
+        "m1/1/3/0/1/16",
+        "m1/1/3/0/1/17",
+        "m1/1/3/0/1/18",
+        "m1/1/3/0/1/19",
+        "m1/1/3/0/1/20",
+        "m1/1/3/0/1/21",
+        "m1/1/3/0/1/22",
+        "m1/1/3/0/1/23",
+        "m1/1/3/0/1/24",
+        "m1/1/3/0/1/25",
+        "m1/1/3/0/1/26",
+        "m1/1/3/0/1/27",
+        "m1/1/3/0/1/28",
+        "m1/1/3/0/1/29",
+        "m1/1/3/0/1/30",
+        "m1/1/3/0/1/31",
+        "m1/1/3/0/1/32",
+        "m1/1/3/0/1/33",
+        "m1/1/3/0/1/34",
+        "m1/1/3/0/1/35",
+        "m1/1/3/0/2/0",
+        "m1/1/3/0/3/0",
+        "m1/2/3/0/0/0",
+        "m1/2/3/0/0/1",
+        "m1/2/3/0/0/2",
+        "m1/2/3/0/0/3",
+        "m1/2/3/0/0/4",
+        "m1/2/3/0/0/5",
+        "m1/2/3/0/0/6",
+        "m1/2/3/0/0/7",
+        "m1/2/3/0/0/8",
+        "m1/2/3/0/0/9",
+        "m1/2/3/0/0/10",
+        "m1/2/3/0/0/11",
+        "m1/2/3/0/0/12",
+        "m1/2/3/0/0/13",
+        "m1/2/3/0/0/14",
+        "m1/2/3/0/0/15",
+        "m1/2/3/0/0/16",
+        "m1/2/3/0/0/17",
+        "m1/2/3/0/0/18",
+        "m1/2/3/0/0/19",
+        "m1/2/3/0/0/20",
+        "m1/2/3/0/0/21",
+        "m1/2/3/0/0/22",
+        "m1/2/3/0/0/23",
+        "m1/2/3/0/0/24",
+        "m1/2/3/0/0/25",
+        "m1/2/3/0/0/26",
+        "m1/2/3/0/0/27",
+        "m1/2/3/0/0/28",
+        "m1/2/3/0/1/0",
+        "m1/2/3/0/1/1",
+        "m1/2/3/0/1/2",
+        "m1/2/3/0/1/3",
+        "m1/2/3/0/1/4",
+        "m1/2/3/0/1/5",
+        "m1/2/3/0/1/6",
+        "m1/2/3/0/1/7",
+        "m1/2/3/0/1/8",
+        "m1/2/3/0/1/9",
+        "m1/2/3/0/1/10",
+        "m1/2/3/0/1/11",
+        "m1/2/3/0/1/12",
+        "m1/2/3/0/1/13",
+        "m1/2/3/0/1/14",
+        "m1/2/3/0/1/15",
+        "m1/2/3/0/1/16",
+        "m1/2/3/0/1/17",
+        "m1/2/3/0/1/18",
+        "m1/2/3/0/1/19",
+        "m1/2/3/0/1/20",
+        "m1/2/3/0/1/21",
+        "m1/2/3/0/1/22",
+        "m1/2/3/0/2/0",
+        "m1/2/3/0/2/1",
+        "m1/2/3/0/3/0",
+        "m1/3/1/0/0/0",
+        "m1/3/1/0/1/0",
+        "m1/3/1/0/1/1",
+        "m1/3/1/0/1/2",
+        "m1/3/1/0/1/3",
+        "m1/3/1/0/1/4",
+        "m1/3/1/0/1/5",
+        "m1/3/1/0/1/6",
+        "m1/3/1/0/1/7",
+        "m1/3/1/0/1/8",
+        "m1/3/1/0/1/9",
+        "m1/3/1/0/1/10",
+        "m1/3/1/0/1/11",
+        "m1/3/1/0/1/12",
+        "m1/3/1/0/1/13",
+        "m1/3/1/0/1/14",
+        "m1/3/1/0/1/15",
+        "m1/3/1/0/1/16",
+        "m1/3/1/0/1/17",
+        "m1/3/1/0/2/0",
+        "m1/3/1/0/2/1",
+        "m1/4/2/0/0/0",
+        "m1/4/2/0/0/1",
+        "m1/4/2/0/0/2",
+        "m1/4/2/0/0/3",
+        "m1/4/2/0/0/4",
+        "m1/4/2/0/0/5",
+        "m1/4/2/0/0/6",
+        "m1/4/2/0/0/7",
+        "m1/4/2/0/0/8",
+        "m1/4/2/0/0/9",
+        "m1/4/2/0/0/10",
+        "m1/4/2/0/0/11",
+        "m1/4/2/0/1/0",
+        "m1/4/2/0/1/1",
+        "m1/4/2/0/1/2",
+        "m1/4/2/0/1/3",
+        "m1/4/2/0/2/0",
+        "m1/4/2/0/2/1",
+        "m1/5/2/0/0/0",
+        "m1/5/2/0/0/1",
+        "m1/5/2/0/0/2",
+        "m1/5/2/0/0/3",
+        "m1/5/2/0/0/4",
+        "m1/5/2/0/0/5",
+        "m1/5/2/0/0/6",
+        "m1/5/2/0/0/7",
+        "m1/5/2/0/0/8",
+        "m1/5/2/0/0/9",
+        "m1/5/2/0/0/10",
+        "m1/5/2/0/0/11",
+        "m1/5/2/0/0/12",
+        "m1/5/2/0/0/13",
+        "m1/5/2/0/1/0",
+        "m1/5/2/0/1/1",
+        "m1/5/2/0/1/2",
+        "m1/5/2/0/2/0",
+        "m1/5/2/0/2/1",
+        "m1/6/2/0/0/0",
+        "m1/6/2/0/0/1",
+        "m1/6/2/0/0/2",
+        "m1/6/2/0/0/3",
+        "m1/6/2/0/0/4",
+        "m1/6/2/0/0/5",
+        "m1/6/2/0/0/6",
+        "m1/6/2/0/0/7",
+        "m1/6/2/0/0/8",
+        "m1/6/2/0/0/9",
+        "m1/6/2/0/0/10",
+        "m1/6/2/0/0/11",
+        "m1/6/2/0/0/12",
+        "m1/6/2/0/0/13",
+        "m1/6/2/0/0/14",
+        "m1/6/2/0/0/15",
+        "m1/6/2/0/1/0",
+        "m1/6/2/0/1/1",
+        "m1/6/2/0/1/2",
+        "m1/6/2/0/2/0",
+        "m1/6/2/0/2/1",
+        "m1/6/2/0/2/2",
+        "m1/7/1/0/0/0",
+        "m1/7/1/0/0/1",
+        "m1/7/1/0/0/2",
+        "m1/7/1/0/0/3",
+        "m1/7/1/0/0/4",
+        "m1/7/1/0/0/5",
+        "m1/7/1/0/0/6",
+        "m1/7/1/0/0/7",
+        "m1/7/1/0/0/8",
+        "m1/7/1/0/0/9",
+        "m1/7/1/0/0/10",
+        "m1/7/1/0/0/11",
+        "m1/7/1/0/0/12",
+        "m1/7/1/0/0/13",
+        "m1/7/1/0/0/14",
+        "m1/7/1/0/0/15",
+        "m1/7/1/0/0/16",
+        "m1/7/1/0/1/0",
+        "m1/7/1/0/1/1",
+        "m1/7/1/0/1/2",
+        "m1/8/1/0/0/0",
+        "m1/8/1/0/0/1",
+        "m1/8/1/0/0/2",
+        "m1/8/1/0/0/3",
+        "m1/8/1/0/0/4",
+        "m1/8/1/0/0/5",
+        "m1/8/1/0/0/6",
+        "m1/8/1/0/0/7",
+        "m1/8/1/0/0/8",
+        "m1/8/1/0/0/9",
+        "m1/8/1/0/0/10",
+        "m1/8/1/0/0/11",
+        "m1/8/1/0/0/12",
+        "m1/8/1/0/0/13",
+        "m1/8/1/0/0/14",
+        "m1/8/1/0/1/0",
+        "m1/8/1/0/1/1",
+        "m1/9/1/0/0/0",
+        "m1/9/1/0/0/1",
+        "m1/9/1/0/0/2",
+        "m1/9/1/0/0/3"
+      ]
+    },
+    {
+      "name": "POTEAUX",
+      "path": "POTEAUX",
+      "kind": "selection",
+      "items": [
+        "m2/2/4"
+      ]
+    }
+  ]
+}

@@ -37,6 +37,24 @@ How it works: the plugin runs inside Navisworks, and `navis-mcp.exe` is the loca
   ```
   To check: `curl.exe -6 https://aecomcps.com/` fails while `curl.exe -4 https://aecomcps.com/` returns 200.
 
+## Coordination setup of the example model (`Example naviswork file/Test navis work.nwf`)
+
+**Search sets** (`SETS_PRK`): every set = `Elément > Fichier source` contains `MSBIM-AP-<ARC|STR|MEP>` AND `Objet > Catégorie` = Revit category (pipes/ducts also split by `Classification du système` / `Type de système > Nom`). Folders 01_ARC, 02_STR, 03_CVC, 04_PLB, 05_ELE, 06_SSI, 07_A-VERIFIER and 10_CLASH (the sets used by clash tests). Coverage: 100 % of physical elements; the only excluded categories are Lignes, Ligne d'axe and Pièces. Backup of the previous sets: `Example naviswork file/backup/`.
+
+**Colours**: permanent overrides per set, plus an Appearance Profiler profile `SETS_PRK - Disciplines.xml` (copy in `Example naviswork file/`; install it in `%APPDATA%\Autodesk\Navisworks Manage 2027\AppearanceProfiler\`). ARC = light greys, STR = warm colours (columns red, beams orange), CVC = blue, PLB = green, ELE = yellow/purple, SSI = red/magenta, unclassified = pink. ARC's copy of the structure is 85 % transparent.
+
+**Clash matrix** (Hard tests 10 mm, Clearance tests 50 mm, merge composites on): 01–04 STR vs CVC/PLB/ELE/SSI, 05–08 ARC vs CVC/PLB/ELE/SSI, 09–14 MEP vs MEP, 15–16 clearance PLB/CVC vs ELE. The rigid discipline is always side A, and side B (the one that moves) defines the group. Old tests are kept as `_ANCIEN - …`.
+
+**Groups**: level + network to move + grid zone (`N1 | Chemins de câbles (5 éléments) | vs Sols, Ossature | P2-PB | 6 conflits`). Singletons of the same level and network are merged into one `conflits isolés` group.
+
+**Viewpoints**: `00_VUES GENERALES` (federated, ARC, STR, MEP, STR+MEP), then `10_CONFLITS/<test>/<n> | <group>`: one viewpoint per group, highlighted (A red, B green, rest dimmed).
+
+**Gotcha**: Clash Detective ignores hidden items. Unhide everything (keep only the non-physical categories hidden) before running tests, otherwise the results go to *Resolved*.
+
+## Interactive clash report
+
+`Example_reports/Rapport_Clash_PRK_<date>.html` is a single offline file with KPIs, a discipline matrix, conflicts by level, filters and snapshots. You can edit status, assignee, priority and comments per group or per conflict; changes are stored in the browser. **Exporter les décisions** writes a JSON file that Claude can re-import into Navisworks (`clash_results_edit`). It is regenerated with `tools/Build-ClashReport.ps1` and `tools/clash-report-template.html`.
+
 ## Notes
 
 - Also installed: the autom8labs MCP Connector plugin. Its free tier is read-only; full use costs £10 per seat per month.

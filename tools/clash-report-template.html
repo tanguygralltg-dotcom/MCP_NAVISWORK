@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rapport de conflits</title>
+<style>
+:root{
+  --bg:#f6f7f9;--panel:#ffffff;--ink:#1d232b;--muted:#5d6876;--line:#dde2e8;--accent:#1f6feb;
+  --st-new:#d73a49;--st-active:#e36209;--st-reviewed:#6f42c1;--st-approved:#2188ff;--st-resolved:#22863a;
+  --heat0:#eef2f6;--heat1:#fde0c5;--heat2:#f9a66c;--heat3:#e8590c;--heat4:#a8320a;--shadow:0 1px 2px rgba(0,0,0,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1318;--panel:#171c23;--ink:#e6e9ee;--muted:#9aa5b1;--line:#2a323c;--accent:#58a6ff;
+    --heat0:#1e252e;--heat1:#4a3220;--heat2:#7a4219;--heat3:#b1530f;--heat4:#e8590c;--shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1318;--panel:#171c23;--ink:#e6e9ee;--muted:#9aa5b1;--line:#2a323c;--accent:#58a6ff;
+  --heat0:#1e252e;--heat1:#4a3220;--heat2:#7a4219;--heat3:#b1530f;--heat4:#e8590c;--shadow:none;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{padding:20px 16px 8px;max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between}
+h1{font-size:22px;margin:0}
+.sub{color:var(--muted);font-size:13px}
+main{max-width:1280px;margin:0 auto;padding:0 16px 48px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;box-shadow:var(--shadow)}
+.kpi .v{font-size:26px;font-weight:650}
+.kpi .l{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:860px){.grid2{grid-template-columns:1fr}}
+h2{font-size:15px;margin:0 0 10px}
+table{border-collapse:collapse;width:100%}
+.heat td,.heat th{border:1px solid var(--line);padding:6px;text-align:center;font-variant-numeric:tabular-nums}
+.heat th{font-weight:600;color:var(--muted);font-size:12px}
+.heat td.c{cursor:pointer}
+.bars .row{display:grid;grid-template-columns:90px 1fr 48px;gap:8px;align-items:center;margin:3px 0;font-size:13px}
+.bars .bar{height:14px;border-radius:3px;background:var(--accent);min-width:2px}
+.toolbar{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center;border-bottom:1px solid var(--line);margin-top:14px}
+select,input,textarea,button{font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:6px 9px}
+input[type=search]{min-width:200px;flex:1}
+button{cursor:pointer}
+button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.groups{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.g{background:var(--panel);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+.g>summary{list-style:none;cursor:pointer;padding:10px 12px;display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center}
+.g>summary::-webkit-details-marker{display:none}
+.gname{font-weight:600;word-break:break-word}
+.gmeta{color:var(--muted);font-size:12px}
+.pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:600;color:#fff;white-space:nowrap}
+.st-New{background:var(--st-new)}.st-Active{background:var(--st-active)}.st-Reviewed{background:var(--st-reviewed)}.st-Approved{background:var(--st-approved)}.st-Resolved{background:var(--st-resolved)}
+.count{font-variant-numeric:tabular-nums;font-weight:650;min-width:38px;text-align:center;border:1px solid var(--line);border-radius:7px;padding:3px 6px}
+.gbody{padding:0 12px 12px;display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:12px}
+@media (max-width:860px){.gbody{grid-template-columns:1fr}}
+.gbody img{width:100%;border-radius:8px;border:1px solid var(--line);cursor:zoom-in;background:#000}
+.edit{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px;margin-bottom:8px}
+.edit label{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+.res{width:100%;font-size:13px}
+.res th,.res td{border-bottom:1px solid var(--line);padding:5px 6px;text-align:left;vertical-align:top}
+.res th{color:var(--muted);font-weight:600;font-size:12px}
+.res td.num{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.res select{padding:2px 4px;font-size:12px}
+.tbl-wrap{overflow-x:auto}
+.empty{color:var(--muted);padding:30px;text-align:center}
+#zoom{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:20;cursor:zoom-out}
+#zoom img{max-width:95vw;max-height:92vh;border-radius:8px}
+.legend{display:flex;flex-wrap:wrap;gap:6px;font-size:12px;color:var(--muted)}
+.dirty{outline:2px solid var(--accent);outline-offset:-2px}
+footer{color:var(--muted);font-size:12px;margin-top:24px}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1 id="title">Rapport de conflits</h1>
+    <div class="sub" id="subtitle"></div>
+  </div>
+  <div style="display:flex;gap:6px;flex-wrap:wrap">
+    <button id="btnTheme" title="Thème clair / sombre">◐ Thème</button>
+    <button id="btnImport">Importer des décisions</button>
+    <button id="btnCsv">Exporter CSV</button>
+    <button class="primary" id="btnExport">Exporter les décisions</button>
+    <input type="file" id="fileImport" accept=".json" hidden>
+  </div>
+</header>
+<main>
+  <section class="kpis" id="kpis"></section>
+  <section class="grid2">
+    <div class="card"><h2>Matrice des conflits (A ↓ / B →)</h2><div class="tbl-wrap"><table class="heat" id="heat"></table></div>
+      <div class="legend" style="margin-top:6px">Cliquez une case pour filtrer.</div></div>
+    <div class="card"><h2>Conflits par niveau</h2><div class="bars" id="byLevel"></div></div>
+  </section>
+  <div class="toolbar">
+    <select id="fTest"><option value="">Tous les tests</option></select>
+    <select id="fLevel"><option value="">Tous les niveaux</option></select>
+    <select id="fStatus"><option value="">Tous les états</option></select>
+    <select id="fAssignee"><option value="">Tous les responsables</option></select>
+    <input type="search" id="fText" placeholder="Rechercher (élément, grille, groupe…)">
+    <select id="fSort">
+      <option value="count">Tri : nb de conflits</option>
+      <option value="depth">Tri : pénétration max</option>
+      <option value="level">Tri : niveau</option>
+      <option value="test">Tri : test</option>
+    </select>
+    <button id="btnReset" title="Effacer les filtres">Réinitialiser</button>
+    <span class="sub" id="shown"></span>
+  </div>
+  <section class="groups" id="groups"></section>
+  <footer id="foot"></footer>
+</main>
+<div id="zoom"><img alt=""></div>
+<script>
+const DATA = /*__DATA__*/null;
+const ST = {New:"Nouveau",Active:"Actif",Reviewed:"Revu",Approved:"Approuvé",Resolved:"Résolu"};
+const ST_ORDER = ["New","Active","Reviewed","Approved","Resolved"];
+const KEY = "clashReport:"+DATA.reportId;
+let edits = {};
+try { edits = JSON.parse(localStorage.getItem(KEY)||"{}"); } catch(e) { edits = {}; }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(edits)); } catch(e) {} };
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const testById = Object.fromEntries(DATA.tests.map(t=>[t.id,t]));
+const resById = Object.fromEntries(DATA.results.map(r=>[r.id,r]));
+const cur = r => Object.assign({status:r.status,assignee:r.assignee||"",priority:r.priority||0,comment:""}, edits[r.id]||{});
+const isDirty = r => !!edits[r.id];
+
+// theme
+(function(){ let t=null; try{t=localStorage.getItem("clashReport:theme");}catch(e){} if(t) document.documentElement.dataset.theme=t; })();
+$("#btnTheme").onclick=()=>{ const d=document.documentElement; const dark = d.dataset.theme ? d.dataset.theme==="dark" : matchMedia("(prefers-color-scheme: dark)").matches; d.dataset.theme = dark?"light":"dark"; try{localStorage.setItem("clashReport:theme",d.dataset.theme);}catch(e){} };
+
+$("#title").textContent = "Rapport de conflits – " + DATA.project;
+$("#subtitle").textContent = `${DATA.document} · généré le ${DATA.generated} · unités : mm`;
+
+// filters
+function fillSelect(sel, values, label=v=>v){ values.forEach(v=>{ const o=document.createElement("option"); o.value=v; o.textContent=label(v); sel.appendChild(o); }); }
+fillSelect($("#fTest"), DATA.tests.map(t=>t.id), id=>testById[id].name);
+const levels=[...new Set(DATA.results.map(r=>r.level||"—"))].sort((a,b)=>(DATA.levelOrder.indexOf(a)+99*(DATA.levelOrder.indexOf(a)<0))-(DATA.levelOrder.indexOf(b)+99*(DATA.levelOrder.indexOf(b)<0)));
+fillSelect($("#fLevel"), levels);
+fillSelect($("#fStatus"), ST_ORDER, s=>ST[s]);
+function refreshAssignees(){ const sel=$("#fAssignee"); const v=sel.value; sel.length=1; fillSelect(sel,[...new Set(DATA.results.map(r=>cur(r).assignee).filter(Boolean))].sort()); sel.value=v; }
+refreshAssignees();
+["#fTest","#fLevel","#fStatus","#fAssignee","#fSort"].forEach(s=>$(s).onchange=render);
+$("#fText").oninput=render;
+$("#btnReset").onclick=()=>{ ["#fTest","#fLevel","#fStatus","#fAssignee"].forEach(s=>$(s).value=""); $("#fText").value=""; render(); };
+
+function groupStatus(rs){ // the least advanced status of the group
+  let best=4; rs.forEach(r=>{ best=Math.min(best, ST_ORDER.indexOf(cur(r).status)); }); return ST_ORDER[Math.max(best,0)];
+}
+
+function kpis(){
+  const all=DATA.results; const by=s=>all.filter(r=>cur(r).status===s).length;
+  const open=by("New")+by("Active");
+  const items=[["Conflits",all.length],["Groupes",DATA.groups.length],["Ouverts",open],["Revus",by("Reviewed")],["Approuvés",by("Approved")],["Résolus",by("Resolved")],["Tests",DATA.tests.length]];
+  $("#kpis").innerHTML = items.map(([l,v])=>`<div class="card kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+}
+
+function heat(){
+  const discA=[...new Set(DATA.tests.map(t=>t.a))], discB=[...new Set(DATA.tests.map(t=>t.b))];
+  const cnt={}; DATA.results.forEach(r=>{ const t=testById[r.test]; if(cur(r).status==="Resolved"||cur(r).status==="Approved") return; const k=t.a+"|"+t.b+"|"+t.type; cnt[k]=(cnt[k]||0)+1; });
+  const max=Math.max(1,...Object.values(cnt));
+  const cls=n=>n===0?"var(--heat0)":n<max*.15?"var(--heat1)":n<max*.4?"var(--heat2)":n<max*.75?"var(--heat3)":"var(--heat4)";
+  let h=`<tr><th></th>${discB.map(b=>`<th>${esc(b)}</th>`).join("")}</tr>`;
+  discA.forEach(a=>{ h+=`<tr><th>${esc(a)}</th>`+discB.map(b=>{ const ts=DATA.tests.filter(t=>t.a===a&&t.b===b); if(!ts.length) return `<td style="color:var(--muted)">·</td>`;
+      const parts=ts.map(t=>{ const n=cnt[t.a+"|"+t.b+"|"+t.type]||0; return `<div>${n}${t.type!=="Hard"?' <span class="sub">(dég.)</span>':''}</div>`; }).join("");
+      const n=ts.reduce((s,t)=>s+(cnt[t.a+"|"+t.b+"|"+t.type]||0),0);
+      return `<td class="c" data-tests="${ts.map(t=>t.id).join(",")}" style="background:${cls(n)};color:${n>max*.4?'#fff':'inherit'}">${parts}</td>`; }).join("")+`</tr>`; });
+  $("#heat").innerHTML=h;
+  $("#heat").querySelectorAll("td.c").forEach(td=>td.onclick=()=>{ $("#fTest").value=td.dataset.tests.split(",")[0]; render(); $("#groups").scrollIntoView({behavior:"smooth"}); });
+}
+
+function byLevel(){
+  const c={}; DATA.results.forEach(r=>{ const s=cur(r).status; if(s==="Resolved"||s==="Approved") return; const l=r.level||"—"; c[l]=(c[l]||0)+1; });
+  const max=Math.max(1,...Object.values(c));
+  $("#byLevel").innerHTML = levels.map(l=>`<div class="row"><span>${esc(l)}</span><div class="bar" style="width:${(c[l]||0)/max*100}%"></div><span class="num">${c[l]||0}</span></div>`).join("") + `<div class="sub" style="margin-top:6px">Conflits ouverts (hors approuvés / résolus).</div>`;
+}
+
+function statusSelect(value, attrs){ return `<select ${attrs}>${ST_ORDER.map(s=>`<option value="${s}" ${s===value?"selected":""}>${ST[s]}</option>`).join("")}</select>`; }
+
+function render(){
+  kpis(); heat(); byLevel();
+  const fT=$("#fTest").value, fL=$("#fLevel").value, fS=$("#fStatus").value, fA=$("#fAssignee").value, q=$("#fText").value.trim().toLowerCase();
+  let gs = DATA.groups.map(g=>({g, rs:g.results.map(id=>resById[id])}));
+  gs = gs.filter(({g,rs})=>{
+    if(fT && g.test!==fT) return false;
+    if(fL && (g.level||"—")!==fL) return false;
+    if(fS && !rs.some(r=>cur(r).status===fS)) return false;
+    if(fA && !rs.some(r=>cur(r).assignee===fA)) return false;
+    if(q){ const hay=(g.name+" "+testById[g.test].name+" "+rs.map(r=>[r.a.name,r.a.type,r.b.name,r.b.type,r.grid,r.name,cur(r).comment].join(" ")).join(" ")).toLowerCase(); if(!hay.includes(q)) return false; }
+    return true; });
+  const s=$("#fSort").value;
+  gs.sort((x,y)=> s==="depth" ? x.g.depthMm-y.g.depthMm : s==="level" ? (DATA.levelOrder.indexOf(x.g.level)-DATA.levelOrder.indexOf(y.g.level))||(y.rs.length-x.rs.length) : s==="test" ? x.g.test.localeCompare(y.g.test)||(y.rs.length-x.rs.length) : y.rs.length-x.rs.length);
+  const nRes=gs.reduce((a,b)=>a+b.rs.length,0);
+  $("#shown").textContent=`${gs.length} groupes · ${nRes} conflits affichés`;
+  if(!gs.length){ $("#groups").innerHTML=`<div class="empty card">Aucun groupe ne correspond aux filtres.</div>`; return; }
+  $("#groups").innerHTML = gs.map(({g,rs})=>{
+    const gs_=groupStatus(rs), t=testById[g.test]; const dirty=rs.some(isDirty);
+    const first=cur(rs[0]);
+    return `<details class="g ${dirty?'dirty':''}" data-g="${g.id}">
+      <summary><span class="count" title="conflits">${rs.length}</span>
+        <div><div class="gname">${esc(g.name)}</div><div class="gmeta">${esc(t.name)} · ${esc(g.level||"—")} · grille ${esc(g.grid||"—")} · pénétration max ${Math.abs(g.depthMm).toFixed(0)} mm</div></div>
+        <span class="pill st-${gs_}">${ST[gs_]}</span></summary>
+      <div class="gbody">
+        <div>${g.img?`<img loading="lazy" src="${g.img}" alt="Vue du conflit ${esc(g.name)}">`:`<div class="empty card">Pas d’image</div>`}
+          <div class="gmeta" style="margin-top:6px">Rouge : ${esc(t.a)} · Vert : ${esc(t.b)}</div></div>
+        <div>
+          <div class="edit">
+            <label>État du groupe ${statusSelect(gs_, `data-gedit="status"`)}</label>
+            <label>Responsable <input data-gedit="assignee" value="${esc(first.assignee)}" placeholder="ex. BET CVC"></label>
+            <label>Priorité <select data-gedit="priority">${[0,1,2,3].map(p=>`<option value="${p}" ${+first.priority===p?"selected":""}>${["—","Haute","Moyenne","Basse"][p]}</option>`).join("")}</select></label>
+          </div>
+          <label class="gmeta" style="display:flex;flex-direction:column;gap:3px;margin-bottom:8px">Commentaire (appliqué à tout le groupe)
+            <textarea data-gedit="comment" rows="2" placeholder="Décision, action à mener…">${esc(first.comment)}</textarea></label>
+          <div class="tbl-wrap"><table class="res"><thead><tr><th>Conflit</th><th>Élément A</th><th>Élément B</th><th>Grille</th><th class="num">Dist. (mm)</th><th>État</th></tr></thead><tbody>
+          ${rs.map(r=>`<tr data-r="${r.id}"><td>${esc(r.name)}</td><td>${esc(r.a.name)}<div class="gmeta">${esc(r.a.type)}</div></td><td>${esc(r.b.name)}<div class="gmeta">${esc(r.b.type)}</div></td><td>${esc(r.grid||"—")}</td><td class="num">${r.distMm.toFixed(0)}</td><td>${statusSelect(cur(r).status,`data-redit="status"`)}</td></tr>`).join("")}
+          </tbody></table></div>
+        </div>
+      </div></details>`; }).join("");
+}
+
+function setEdit(r, field, value){
+  const base={status:r.status,assignee:r.assignee||"",priority:r.priority||0,comment:""};
+  const e=Object.assign({}, base, edits[r.id]||{}); e[field]= field==="priority"? +value : value;
+  const changed = e.status!==base.status || e.assignee!==base.assignee || +e.priority!==+base.priority || e.comment!=="";
+  if(changed) edits[r.id]=e; else delete edits[r.id];
+}
+$("#groups").addEventListener("change", ev=>{
+  const el=ev.target; const det=el.closest("details"); if(!det) return;
+  const g=DATA.groups.find(x=>x.id===det.dataset.g);
+  if(el.dataset.gedit){ g.results.forEach(id=>setEdit(resById[id], el.dataset.gedit, el.value)); }
+  else if(el.dataset.redit){ const tr=el.closest("tr"); setEdit(resById[tr.dataset.r], "status", el.value); }
+  save(); refreshAssignees(); const open=det.dataset.g; render(); const d=document.querySelector(`details[data-g="${CSS.escape(open)}"]`); if(d) d.open=true;
+});
+$("#groups").addEventListener("click", ev=>{ if(ev.target.tagName==="IMG"){ $("#zoom img").src=ev.target.src; $("#zoom").style.display="flex"; } });
+$("#zoom").onclick=()=>$("#zoom").style.display="none";
+
+function download(name, text, type){ const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([text],{type})); a.download=name; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),1000); }
+$("#btnExport").onclick=()=>{
+  const decisions=Object.entries(edits).map(([id,e])=>{ const r=resById[id]; return {test:testById[r.test].name, testGuid:r.test, result:r.name, resultGuid:id, status:e.status, assignee:e.assignee, priority:e.priority, comment:e.comment}; });
+  download(`decisions_${DATA.reportId}.json`, JSON.stringify({reportId:DATA.reportId, document:DATA.document, exported:new Date().toISOString(), decisions},null,2), "application/json");
+};
+$("#btnCsv").onclick=()=>{
+  const rows=[["Test","Groupe","Conflit","Niveau","Grille","Distance mm","Élément A","Type A","Élément B","Type B","État","Responsable","Priorité","Commentaire"]];
+  DATA.groups.forEach(g=>g.results.forEach(id=>{ const r=resById[id], c=cur(r); rows.push([testById[r.test].name,g.name,r.name,r.level,r.grid,r.distMm.toFixed(0),r.a.name,r.a.type,r.b.name,r.b.type,ST[c.status],c.assignee,c.priority,c.comment]); }));
+  download(`conflits_${DATA.reportId}.csv`, "﻿"+rows.map(r=>r.map(v=>`"${String(v??"").replace(/"/g,'""')}"`).join(";")).join("\r\n"), "text/csv");
+};
+$("#btnImport").onclick=()=>$("#fileImport").click();
+$("#fileImport").onchange=async ev=>{ const f=ev.target.files[0]; if(!f) return; try{ const j=JSON.parse(await f.text()); (j.decisions||[]).forEach(d=>{ if(resById[d.resultGuid]) edits[d.resultGuid]={status:d.status,assignee:d.assignee||"",priority:+d.priority||0,comment:d.comment||""}; }); save(); refreshAssignees(); render(); alert(`${(j.decisions||[]).length} décisions importées.`);}catch(e){ alert("Fichier non valide : "+e.message); } ev.target.value=""; };
+
+$("#foot").innerHTML = `Les modifications sont enregistrées dans ce navigateur. « Exporter les décisions » produit un fichier JSON que Claude peut réimporter dans Navisworks (états, responsables, commentaires). Tolérances : ${DATA.tests.map(t=>esc(t.name)+" "+t.tolMm+" mm").join(" · ")}.`;
+render();
+</script>
+</body>
+</html>
